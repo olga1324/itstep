@@ -1,0 +1,30 @@
+pre{
+    font-size: 30px;
+    color: hsl(195, 2%, 35%);
+    letter-spacing: 4px;
+    word-spacing: 6px;
+    line-height: 60px;
+}
+
+ins+span{
+    text-decoration: overline;
+}
+.prime
+{
+    font-weight: 900;
+}
+ins del {
+    box-shadow: 2px 2px 4px orange;
+}
+ins .prime del{
+    font-size: 35px;
+}
+.power {
+    color: rgb(223, 96, 155);
+}
+div{
+    display: none;
+}
+a:hover+div{
+    display: block;
+}
