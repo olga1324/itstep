@@ -26,6 +26,6 @@ ins .prime del{
 .numb{
     opacity: 0;
 }
-:hover.numb{
+.numb:hover{
     opacity: 1;
 }
