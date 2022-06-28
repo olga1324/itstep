@@ -20,11 +20,12 @@ ins .prime del{
     font-size: 35px;
 }
 .power {
-    color: rgb(223, 96, 155);
+    color: rgb(32, 25, 28);
 }
-div{
-    display: none;
+
+.numb{
+    opacity: 0;
 }
-a:hover+div{
-    display: block;
+:hover.numb{
+    opacity: 1;
 }
