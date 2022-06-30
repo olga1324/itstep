@@ -1,0 +1,20 @@
+table{
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    border-collapse: separate;
+    color: #141312;
+}
+th{
+    color: white;
+    background: #1f7dd6;
+}
+td{
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+}
+tr:nth-child(even){
+    background:#afc4d8;
+}
+tr:nth-child(odd){
+    background: #e7ebee;
+}
