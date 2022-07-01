@@ -1,0 +1,11 @@
+.java img{
+    text-align: left;
+    float: right;
+}
+.BE img {
+    text-align: right;
+    float: left;
+}
+.cd{
+    text-align: center;
+}
