@@ -1,11 +1,79 @@
 .java img{
+    text-align: right;
+    float:left;
+    ;
+}
+.BE img {
     text-align: left;
     float: right;
 }
-.BE img {
-    text-align: right;
-    float: left;
-}
 .cd{
     text-align: center;
+}
+h1{
+    font-size:24px;
+    font-family:Gantari;
+}
+h2{
+    font-size: 18px;
+    font-family:Gantari
+}
+h3{
+    font-size: 16px;
+    font-family:Gantari
+}
+p{
+    font-size: 14PX;
+}
+pre{
+    font-size: .7rem;
+    margin: 0;
+}
+li.type{
+    list-style-image:url(../img/i\ \(7\).jpg);
+    list-style-position: inside; 
+}
+.green{
+    color: rgb(25, 109, 25);
+}
+.blue{
+    color: rgb(27, 27, 184);
+}
+.red{
+    color: rgb(196, 13, 13);
+}
+
+table.t1 {
+	margin: 1em auto;
+    border-collapse:separate;
+    border: 1px solid rgb(86, 84, 207);
+	font-family: Arial, Helvetica, sans-serif;
+}
+.t1 th, .t1 td {
+	padding: 4px 8px;
+ }
+.t1 thead th {
+	background: #4485d4;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 15px;
+	color: #fff;
+}
+.t1 tr {
+    border-right: 1px solid #95b3d7;
+    
+}
+.t1 tbody tr {
+    border-bottom: 1px solid #94a8c0;
+    
+ }
+.t1 tbody tr:nth-child(odd) {
+	background: #bacbdf;
+    text-align: center;
+   
+}
+.t1 tbody th, .t1 tbody tr:nth-child(even) td {
+    border-right: 1px solid #8d9db1;
+    text-align: center;
+   
 }
