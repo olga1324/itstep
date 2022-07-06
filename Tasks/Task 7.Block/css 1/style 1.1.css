@@ -1,0 +1,37 @@
+.block{
+    width: 400px;
+    height: 400px;
+    background: #000;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -200px;
+}
+.inner{
+    width: 100px;
+    height: 100px;
+    background: rgb(139, 27, 173);
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    position: absolute;
+    float: left;
+}
+.inner1{
+left:0px;
+top: 0px;
+}
+.inner2{
+top: 0px;
+left: 300px; ;
+}
+.inner3{
+top: 300px;
+left:0px
+}
+.inner4{
+top: 300px;
+left: 300px;
+}
