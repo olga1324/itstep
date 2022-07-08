@@ -16,18 +16,18 @@
     text-align: center;
     line-height: 100px;
     font-size: 50px;
-    position: relative;
-    
+    position: absolute;
+    float: left;
 }
 .inner1{
-margin: 400px 0 0 400px;
-}
-.inner2{
-margin: -100px 0 0 -100px;
-}
-.inner3{
-margin: -600px 0 0 400px; 
-}
-.inner4{
-  margin: -100px 0 0 -100px;
-}
+    margin: 0px;
+    }
+    .inner2{
+    margin: 100px;;
+    }
+    .inner3{
+    margin: 200px; ;
+    }
+    .inner4{
+    margin:300px ;
+    }
