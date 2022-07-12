@@ -19,9 +19,9 @@
     position: relative;
     float: left;
 }
-.left{
-    margin-left: 100px;
+.mr100{
+    margin-right: 100px;
 }
-.left2{
-    margin-left: 101px;
+.ml100{
+    margin-left: 100px;
 }
