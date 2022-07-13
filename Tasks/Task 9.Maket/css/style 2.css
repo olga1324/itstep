@@ -1,0 +1,99 @@
+div{
+    position: relative;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 30px;
+}
+.main{
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    top: calc(50% - 350px);
+    left: calc(50% - 300px);
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    background: #000;
+}
+.home{
+    width: 300px;
+}
+.info{
+    width: 150px;
+    height: 100px;
+    background: rgb(100, 110, 138);
+}
+.use{
+    width: 100px;  
+}
+.search{
+    width: 100px;
+    height: 100px;
+    background: rgb(172, 96, 96);
+} 
+.input{
+    width: 100px;
+    height: 100px;
+    background: rgb(199, 71, 71);
+}
+.menu{
+    width: 200px;
+}
+.news{
+    width: 200px;
+    height: 100px;
+    background: rgba(41, 120, 134, 0.705);
+}
+.posts{
+    width: 300px;
+}
+.post{
+    width: 300px;
+    height: 200px;
+    background: rgba(78, 177, 39, 0.705);
+    line-height: 190px;
+}
+.offers{
+    width: 100px;
+}
+.advertising{
+    width: 100px;
+    height: 100px;
+    background: rgb(158, 71, 199); 
+}
+.nav{
+    width: 150px;
+    height: 100px;
+    background: rgb(201, 198, 51); 
+}
+.footer{
+    height: 200px; 
+ }
+ .social-networks{
+    width: 200px;
+    height: 200px;
+    background: rgb(201, 106, 51); 
+    line-height: 220px;
+ }
+ .connection{
+    width: 300px;
+ }
+ .reviews{
+    width: 300px;
+    height: 100px;
+    background: rgb(24, 131, 51); 
+ }
+ .contacts{
+    width: 150px;
+    height: 100px;
+    background: rgb(24, 35, 131); 
+ }
+ .about-company{
+    width: 100px;
+    height: 200px;
+    background: rgb(218, 20, 53); 
+    line-height: 220px;
+ }
