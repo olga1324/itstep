@@ -7,93 +7,84 @@ div{
     font-size: 30px;
 }
 .main{
-    width: 600px;
-    height: 700px;
+    width: 800px;
+    height: 1400px;
     position: absolute;
-    top: calc(50% - 350px);
-    left: calc(50% - 300px);
+    left: calc(50% - 400px);
+}
+.header, .content, .footer{
+    width: 100%;
+}
+.col{
+    width: 25%;
 }
 .logo{
-    width: 200px;
+    width: 100%;
+    height: 400px;
+    background: plum;
+}
+.block{
+    width: 100%;
     height: 200px;
-    background: #000;
-}
-.home{
-    width: 300px;
-}
-.info{
-    width: 150px;
-    height: 100px;
-    background: rgb(100, 110, 138);
-}
-.use{
-    width: 100px;  
-}
-.search{
-    width: 100px;
-    height: 100px;
-    background: rgb(172, 96, 96);
-} 
-.input{
-    width: 100px;
-    height: 100px;
-    background: rgb(199, 71, 71);
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: palevioletred;
 }
 .menu{
-    width: 200px;
+    width: 25%;
 }
-.news{
-    width: 200px;
-    height: 100px;
-    background: rgba(41, 120, 134, 0.705);
+.blog{
+    width: 75%;
 }
-.posts{
-    width: 300px;
-}
-.post{
-    width: 300px;
+.menu-block{
+    width: 100%;
     height: 200px;
-    background: rgba(78, 177, 39, 0.705);
-    line-height: 190px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background: pink;
 }
-.offers{
-    width: 100px;
+.blog-row{
+    width: 100%;
 }
-.advertising{
-    width: 100px;
-    height: 100px;
-    background: rgb(158, 71, 199); 
+.blog-col-2{
+    width: 66.6666666%;
 }
-.nav{
-    width: 150px;
-    height: 100px;
-    background: rgb(201, 198, 51); 
+.blog-col-1{
+    width: 33.3333333%;
 }
-.footer{
-    height: 200px; 
- }
- .social-networks{
+.big-img{
+    width: 100%;
+    height: 400px;
+    background: purple;
+}
+.small-img{
     width: 200px;
     height: 200px;
-    background: rgb(201, 106, 51); 
-    line-height: 220px;
- }
- .connection{
-    width: 300px;
- }
- .reviews{
-    width: 300px;
-    height: 100px;
-    background: rgb(24, 131, 51); 
- }
- .contacts{
-    width: 150px;
-    height: 100px;
-    background: rgb(24, 35, 131); 
- }
- .about-company{
-    width: 100px;
+    background: fuchsia;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.footer-col{
+    width: 25%;
+    height: 400px;
+    background: fuchsia;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.footer-big-col{
+    width: 50%;
+}
+.social{
+    width: 100%;
     height: 200px;
-    background: rgb(218, 20, 53); 
-    line-height: 220px;
- }
+    background: fuchsia;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.social-small{
+    width: 50%;
+    height: 200px;
+    background: fuchsia;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
