@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
   .wrapper {
     display: flex;
@@ -11,14 +12,11 @@ body {
     border: 2px solid black;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    
-    
-    
+
   }
   .block {
     width: 40px;
     height: 40px;
-
   }
   .block:nth-child(1) {
       background-color: tomato;
