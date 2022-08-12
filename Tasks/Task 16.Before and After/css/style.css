@@ -1,0 +1,112 @@
+.container {
+    margin: 90px auto;
+    height: 175px;
+    width: 170px;
+  }
+.head{
+    width: 0;
+    height: 0;
+    border-left: 90px solid rgba(200, 98, 30, 0.579);
+    border-bottom: 140px solid rgba(200, 98, 30, 0.579);
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-right: 90px solid rgba(200, 98, 30, 0.579);
+    border-top: 60px solid transparent;
+}
+
+  .eye-left {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    display: inline-block;
+    margin:0px 0px -30px -35px;    
+  }
+  
+  .eye-right {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    display: inline-block;
+    margin:-62px 0px -13px 13px;
+    
+  }
+  .shine-left{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin:5px 0px 5px 0px;
+  }
+  .shine-right {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin:5px 0px 5px 0px;
+  }
+  .nose {
+    width: 30px;
+    height: 15px;
+    background: #000;
+    border-radius: 100px / 50px;
+    margin: 15px 0px 0px -13px ;
+  }
+  .body{
+    display: block;
+    width: 210px;
+    height: 260px;
+    margin: -30px 0px 5px -15px;
+    background-color: rgba(200, 98, 30, 0.579);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+  .paw-left {
+    width: 80px;
+    height: 80px;
+    background: rgba(200, 98, 30, 0.579);
+    border-radius: 50%;
+    margin: -50px 0px 5px 0px;
+    
+  }
+  .paw-right {
+    width: 80px;
+    height: 80px;
+    background: rgba(200, 98, 30, 0.579);
+    border-radius: 50%;
+    margin: -84px 0px 0px 80px;
+    
+  }
+ .tail{
+    width: 180px;
+    height: 210px;
+    border-radius: 50%;
+    box-shadow: 50px 40px 0 0 rgba(200, 98, 30, 0.579);
+    margin:-165px 0px 5px 25px;
+  }
+  .scarf {
+    position: relative;
+    background: rgb(5, 75, 15);
+    height: 90px;
+    width: 185px;
+    border-radius: 50px;
+    margin: -370px 0px -30px -9px;
+  }
+  .scarf:before,
+  .scarf:after {
+    content: '';
+    position: absolute;
+    border-bottom: 105px solid rgb(5, 75, 15);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    top: 70px;
+    left: -10px;
+    transform: rotate(-140deg);
+  }
+  .scarf:after {
+    left: auto;
+    right: -10px;
+    transform: rotate(140deg);
+  }
+
+  
