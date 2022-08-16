@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>CSS</h1>
+    <h2>Меню</h2>
+    <ol>
+        <li><a href="#css">css</a></li>
+        <li><a href="#Method">Способы подключения CSS к документу</a> </li>
+        <li><a href="#Rules">Правила построения CSS</a> </li>
+        <li><a href="#exemples">Пример таблицы стилей</a> </li>
+    </ol>
+    <h2 id="css">css</h2>
+    <p>
+        <strong>CSS</strong> ( англ. <em>Cascading Style Sheets</em> — каскадные таблицы стилей) —
+        формальный язык описания внешнего вида документа, написанного с использованием языка разметки.
+        Преимущественно используется как средство описания,оформления внешнего вида веб-страниц,написанных
+        с помощью языков разметки <strong>HTML</strong> и <strong>XHTML</strong>, но может также
+        применяться к любым XML-документам,например, к <strong>SVG</strong> или <strong>XUL</strong>.
+    </p>
+    <h2 id="Method">Способы подключения CSS к документу</h2>
+    <p>
+        Правила CSS пишутся на формальном языке CSS и располагаются в таблицах стилей, то есть таблицы
+        стилей содержат в себе правила CSS.
+        Эти таблицы стилей могут располагаться как в самом веб-документе, внешний вид которого они описывают, так и
+        в отдельных файлах, имеющих формат CSS.
+        (По сути, формат CSS — это обычный текстовый файл. В файле .css не содержится ничего, кроме перечня правил
+        CSS и комментариев к ним.)
+        То есть, эти таблицы стилей могут быть подключены, внедрены в описываемый ими веб-документ четырьмя
+        различными способами:
+    </p>
+    <p>
+    <ul>
+        <li> когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу
+            посредством тега <span class="clgreen">&lt;link&gt;</span>,располагающегося в этом документе между тегами
+            <span class="clgreen">&lthead&gt;</span> и <span class="clgreen">&lt/head&gt;</span>.
+            (Тег <span class="clgreen">&ltlink&gt;</span> будет иметь атрибут <span class="clblue">href</span>,
+            имеющий значением адрес этой таблицы стилей).
+            Все правила этой таблицы действуют на протяжении всего документа;
+        </li>
+        </p>
+        <p>
+            <li> когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу
+                посредством директивы <strong>@import</strong>,располагающейся в этом документе между
+                тегами <span class="clgreen">&ltstyle&gt;</span>
+                и <span class="clgreen">&lt/style&gt</span>(которые, в свою очередь, располагаются в этом документе
+                между тегами <span class="clgreen">&lthead&gt;</span>
+                и <span class="clgreen"> &lt/head&gt;</span>)
+                сразу после тега <span class="clgreen">&ltstyle&gt;</span>, которая также указывает (в своих скобках,
+                после слова url) на адрес этой таблицы стилей.
+                Все правила этой таблицы действуют на протяжении всего документа;
+            </li>
+        </p>
+        <p>
+            <li> когда таблица стилей описана в самом документе, она может располагаться в нём между
+                тегами <span class="clgreen">&ltstyle&gt;</span> и
+                <span class="clgreen"> &lt/style&gt;</span>(которые, в свою очередь, располагаются в этом документе
+                между тегами
+                <span class="clgreen">&lthead&gt;</span> и<span class="clgreen">&lt/head&gt;</span>.
+                Все правила этой таблицы действуют на протяжении всего документа;
+            </li>
+
+        </p>
+        <p>
+            <li>когда таблица стилей описана в самом документе, она может располагаться в нём в теле какого-то
+                отдельного тега
+                (посредством его атрибута <span class="clblue">style</span>) этого документа.
+                Все правила этой таблицы действуют только на содержимое этого тега.
+            </li>
+    </ul>
+    </p>
+    <h2 id="Rules">Правила построения CSS</h2>
+    <p>В первых трёх случаях подключения таблицы CSS к документу (см. выше) каждое правило CSS из таблицы стилей имеет
+        две основные части — <strong>селектор</strong> и <strong>блок объявлений</strong>. Селектор, расположенный в
+        левой части правила, определяет, на какие части документа распространяется правило.
+        Блок объявлений располагается в правой части правила. Он помещается в фигурные скобки, и, в свою очередь,
+        состоит из одного или более объявлений, разделённых знаком <strong>«;»</strong>. Каждое объявление представляет
+        собой сочетание
+        свойства CSS и значения, разделённых знаком <strong>": "</strong>. Селекторы могут группироваться в одной строке
+        через запятую.
+        В таком случае свойство применяется к каждому из них.
+    </p>
+    <h2 id="exemples">Пример таблицы стилей</h2>
+    <p>Пример таблицы стилей (в таком виде она может быть либо размещена в отдельном файле .css либо же обрамлена тегами
+        <span class="clgreen">&ltstyle&gt;</span> и размещена в «шапке» той самой веб-страницы, на которую она
+        действует):
+    <pre style="padding-bottom: 1000px">
+
+            <span class="clred">p {</span>
+                <span class="clcadetblue"> font-family:</span><span class="cldarkorchid"> arial, helvetica, sans-serif;</span>
+           <span class="clred"> }
+            h2 {</span>
+                <span class="clcadetblue">font-size:</span> <span class="cldarkorchid">20pt;</span>
+                <span class="clcadetblue">color:</span><span class="cldarkorchid"> red;</span>
+                <span class="clcadetblue">background:</span><span class="cldarkorchid"> white;</span>
+           <span class="clred"> }
+            .note {</span>
+                <span class="clcadetblue">color:</span><span class="cldarkorchid"> red;</span>
+                <span class="clcadetblue">background-color:</span> <span class="cldarkorchid">yellow;</span>
+                <span class="clcadetblue">font-weight:</span> <span class="cldarkorchid"> bold;</span>
+           <span class="clred"> }
+            p#paragraph1 {</span>
+                <span class="clcadetblue">padding-left:</span> <span class="cldarkorchid">10px;</span>
+            <span class="clred">}</span>
+
+    </pre><a href="#">Наверх</a>
+</body>
+
+</html>

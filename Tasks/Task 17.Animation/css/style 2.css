@@ -33,6 +33,9 @@
     border-radius: 50%;
     background-color: #000;
     display: inline-block;
+    transition-property:background, width, height;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
     margin:0px 0px -30px -35px;    
   }
   .eye-right {
@@ -41,14 +44,30 @@
     border-radius: 50%;
     background-color: #000;
     display: inline-block;
+    transition-property:background,width, height;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
     margin:-62px 0px -13px 13px;
   }
+#eyes:hover .eye-left, #eyes:hover .eye-right{
+  background-color: #fff;
+  height: 30px;
+  width: 30px;
+}
+#eyes:hover .shine-left, #eyes:hover .shine-right{
+  background-color: #000;
+  height: 12px;
+    width: 12px;
+}
   .shine-left{
     height: 12px;
     width: 12px;
     border-radius: 50%;
     background-color: #fff;
     margin:5px 0px 5px 0px;
+    transition-property:background,width, height;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
   }
   .shine-right {
     height: 12px;
@@ -56,6 +75,9 @@
     border-radius: 50%;
     background-color: #fff;
     margin:5px 0px 5px 0px;
+    transition-property:background,width, height;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
   }
   .nose {
     width: 30px;
@@ -86,19 +108,26 @@
     border-radius: 50%;
     margin: -84px 0px 0px 80px;
   }
- .tail{
+ #tail{
     width: 180px;
     height: 210px;
     border-radius: 50%;
     box-shadow: 50px 40px 0 0 rgba(200, 98, 30, 0.579);
     margin:-165px 0px 5px 25px;
+    animation: tail 6s linear infinite;
+    transform-origin: right bottom;
+    transform-box: fill-box;
   }
+ 
   .scarf {
     position: relative;
     background: rgb(5, 75, 15);
     height: 90px;
     width: 185px;
     border-radius: 50px;
+    transition-property:background;
+    transition-timing-function: linear;
+    transition-duration: 3s;
     margin: -370px 0px -30px -9px;
   }
   .scarf:before,
@@ -111,10 +140,32 @@
     top: 70px;
     left: -10px;
     transform: rotate(-140deg);
+    transition-property:background;
+    transition-timing-function: linear;
+    transition-duration: 3s;
   }
   .scarf:after {
     left: auto;
     right: -10px;
     transform: rotate(140deg);
+    transition-property:background;
+    transition-timing-function: linear;
+    transition-duration: 3s;
   }
-  
+  #scarf:hover .scarf{
+    background-color: rgb(244, 13, 13);
+  }
+  a{
+    position: fixed;
+    display: block;
+    color: #fff;
+    background: black;
+    padding: 15px 20px;
+    top: 40px;
+}
+.start{
+    left: calc(50% - 150px);
+}
+.end{
+    left: calc(50% + 30px);
+}

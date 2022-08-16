@@ -1,0 +1,44 @@
+a{
+    position: fixed;
+    display: block;
+    color: #fff;
+    background: black;
+    padding: 15px 20px;
+    top: 40px;
+}
+.start{
+    left: calc(50% - 150px);
+}
+.end{
+    left: calc(50% + 30px);
+}
+.box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: #f00;
+    border-radius: 0;
+}
+#box:target{
+    animation: run 5s linear 1;
+}
+@keyframes run{
+    0%{
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background: #f00;
+        border-radius: 0;    
+    }
+    100%{
+        top: calc(100% - 200px);
+        left:  calc(100% - 200px);
+        background: #0f0;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+}
