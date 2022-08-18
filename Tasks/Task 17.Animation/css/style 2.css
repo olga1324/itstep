@@ -1,171 +1,248 @@
 .container {
-    margin: 90px auto;
-    height: 175px;
-    width: 170px;
-  }
-.head{
-    width: 0;
-    height: 0;
-    border-left: 90px solid rgba(200, 98, 30, 0.579);
-    border-bottom: 140px solid rgba(200, 98, 30, 0.579);
-    border-bottom-left-radius: 90px;
-    border-bottom-right-radius: 90px;
-    border-right: 90px solid rgba(200, 98, 30, 0.579);
-    border-top: 60px solid transparent;
+  margin: 90px auto;
+  height: 175px;
+  width: 170px;
 }
-.ear-left{
+
+.head {
+  width: 0;
+  height: 0;
+  border-left: 90px solid rgba(200, 98, 30, 0.579);
+  border-bottom: 140px solid rgba(200, 98, 30, 0.579);
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+  border-right: 90px solid rgba(200, 98, 30, 0.579);
+  border-top: 60px solid transparent;
+  animation-name: headmove;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes headmove {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  40% {
+    transform: rotate(0);
+  }
+
+  60% {
+    transform: rotate(15deg);
+  }
+
+  80% {
+    transform: rotate(0);
+  }
+}
+
+.ear-left {
   width: 0;
   height: 0;
   border-bottom: 40px solid rgb(154, 131, 43);
   border-right: 40px solid transparent;
-  margin:-35px 0px 5px -74px ;
+  margin: -35px 0px 5px -74px;
 }
+
 .ear-right {
   width: 0;
   height: 0;
   border-bottom: 40px solid rgb(154, 131, 43);
   border-left: 40px solid transparent;
-  margin:-44px 0px 5px 35px ;
+  margin: -44px 0px 5px 35px;
 }
-  .eye-left {
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    background-color: #000;
-    display: inline-block;
-    transition-property:background, width, height;
-    transition-timing-function: linear;
-    transition-duration: 0.5s;
-    margin:0px 0px -30px -35px;    
-  }
-  .eye-right {
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    background-color: #000;
-    display: inline-block;
-    transition-property:background,width, height;
-    transition-timing-function: linear;
-    transition-duration: 0.5s;
-    margin:-62px 0px -13px 13px;
-  }
-#eyes:hover .eye-left, #eyes:hover .eye-right{
+
+.eye-left {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+  transition-property: background, width, height;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  margin: 0px 0px -30px -35px;
+}
+
+.eye-right {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+  transition-property: background, width, height;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  margin: -62px 0px -13px 13px;
+}
+
+#eyes:hover .eye-left,
+#eyes:hover .eye-right {
   background-color: #fff;
   height: 30px;
   width: 30px;
 }
-#eyes:hover .shine-left, #eyes:hover .shine-right{
+
+#eyes:hover .shine-left,
+#eyes:hover .shine-right {
   background-color: #000;
   height: 12px;
-    width: 12px;
+  width: 12px;
 }
-  .shine-left{
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: #fff;
-    margin:5px 0px 5px 0px;
-    transition-property:background,width, height;
-    transition-timing-function: linear;
-    transition-duration: 0.5s;
-  }
-  .shine-right {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    background-color: #fff;
-    margin:5px 0px 5px 0px;
-    transition-property:background,width, height;
-    transition-timing-function: linear;
-    transition-duration: 0.5s;
-  }
-  .nose {
-    width: 30px;
-    height: 15px;
-    background: #000;
-    border-radius: 100px / 50px;
-    margin: 15px 0px 0px -13px ;
-  }
-  .body{
-    display: block;
-    width: 210px;
-    height: 260px;
-    margin: -30px 0px 5px -15px;
-    background-color: rgba(200, 98, 30, 0.579);
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  }
-  .paw-left {
-    width: 80px;
-    height: 80px;
-    background: rgba(200, 98, 30, 0.579);
-    border-radius: 50%;
-    margin: -50px 0px 5px 0px;
-  }
-  .paw-right {
-    width: 80px;
-    height: 80px;
-    background: rgba(200, 98, 30, 0.579);
-    border-radius: 50%;
-    margin: -84px 0px 0px 80px;
-  }
- #tail{
-    width: 180px;
-    height: 210px;
-    border-radius: 50%;
-    box-shadow: 50px 40px 0 0 rgba(200, 98, 30, 0.579);
-    margin:-165px 0px 5px 25px;
-    animation: tail 6s linear infinite;
-    transform-origin: right bottom;
-    transform-box: fill-box;
-  }
- 
-  .scarf {
-    position: relative;
-    background: rgb(5, 75, 15);
-    height: 90px;
-    width: 185px;
-    border-radius: 50px;
-    transition-property:background;
-    transition-timing-function: linear;
-    transition-duration: 3s;
-    margin: -370px 0px -30px -9px;
-  }
-  .scarf:before,
-  .scarf:after {
-    content: '';
-    position: absolute;
-    border-bottom: 105px solid rgb(5, 75, 15);
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    top: 70px;
-    left: -10px;
-    transform: rotate(-140deg);
-    transition-property:background;
-    transition-timing-function: linear;
-    transition-duration: 3s;
-  }
-  .scarf:after {
-    left: auto;
-    right: -10px;
-    transform: rotate(140deg);
-    transition-property:background;
-    transition-timing-function: linear;
-    transition-duration: 3s;
-  }
-  #scarf:hover .scarf{
-    background-color: rgb(244, 13, 13);
-  }
-  a{
-    position: fixed;
-    display: block;
-    color: #fff;
-    background: black;
-    padding: 15px 20px;
-    top: 40px;
+
+.shine-left {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px 0px 5px 0px;
+  transition-property: background, width, height;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
 }
-.start{
-    left: calc(50% - 150px);
+
+.shine-right {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 5px 0px 5px 0px;
+  transition-property: background, width, height;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
 }
-.end{
-    left: calc(50% + 30px);
+
+.nose {
+  width: 30px;
+  height: 15px;
+  background: #000;
+  border-radius: 100px / 50px;
+  margin: 15px 0px 0px -13px;
+}
+
+.body {
+  display: block;
+  width: 210px;
+  height: 260px;
+  margin: -30px 0px 5px -15px;
+  background-color: rgba(200, 98, 30, 0.579);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.paw-left {
+  width: 80px;
+  height: 80px;
+  background: rgba(200, 98, 30, 0.579);
+  border-radius: 50%;
+  margin: -50px 0px 5px 0px;
+  animation: paws 5s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+.paw-right {
+  width: 80px;
+  height: 80px;
+  background: rgba(200, 98, 30, 0.579);
+  border-radius: 50%;
+  margin: -84px 0px 0px 80px;
+  animation: paws 5s;
+  animation-delay: 300ms;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes paws {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  37% {
+    transform: scale(1, 1);
+  }
+
+  40% {
+    transform: scale(1, 0);
+  }
+
+  43% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.tail {
+  width: 180px;
+  height: 210px;
+  border-radius: 50%;
+  box-shadow: 50px 40px 0 0 rgba(200, 98, 30, 0.579);
+  margin: -300px 0px 5px 100px;
+  animation: tail 7s linear infinite;
+  transform-origin: left bottom;
+  transform-box: fill-box;
+}
+
+@keyframes tail {
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.scarf {
+  position: relative;
+  background: rgb(5, 75, 15);
+  height: 90px;
+  width: 185px;
+  border-radius: 50px;
+  margin: -225px 0px -30px -9px;
+}
+
+.scarf:before,
+.scarf:after {
+  content: '';
+  position: absolute;
+  border-bottom: 105px solid rgb(5, 75, 15);
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  top: 70px;
+  left: -10px;
+  transform: rotate(-140deg);
+}
+
+.scarf:after {
+  left: auto;
+  right: -10px;
+  transform: rotate(140deg);
+}
+
+a {
+  position: fixed;
+  display: block;
+  color: #fff;
+  background: black;
+  padding: 15px 20px;
+  top: 40px;
+}
+
+.start {
+  left: calc(50% - 150px);
+}
+
+.end {
+  left: calc(50% + 30px);
 }
