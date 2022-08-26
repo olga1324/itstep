@@ -1,11 +1,11 @@
 .main-menu {
 
-    ul {
+    &>ul {
         list-style: none;
         display: flex;
     
 
-            li {
+            &>li {
 
                 a {
                     text-decoration: none;
@@ -36,7 +36,7 @@
                         }
                 }
 
-                ul {
+                &>ul {
                     display: none;
                     position: absolute;
                     list-style: none;
@@ -46,11 +46,11 @@
                     box-shadow: 0 5px 6.8px 0.2px $black;
                     width: 250px;
 
-                    li+li {
+                    &>li+li {
                             margin-top: 10px;
                         }
 
-                    li{
+                    &>li{
                         a {
                             text-decoration: none;
                             color: $brown;
