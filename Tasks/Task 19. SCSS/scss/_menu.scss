@@ -1,13 +1,13 @@
 .main-menu {
 
-    &>ul {
+    >ul {
         list-style: none;
         display: flex;
     
 
-            &>li {
+            >li {
 
-                a {
+                >a {
                     text-decoration: none;
                     display: flex;
                     flex-direction: column;
@@ -18,25 +18,25 @@
                     font-size: 20px;
                     border-bottom: 3px solid transparent;
 
-                        span {
+                        >span {
                                 color: $orange;
                                 font-size: 14px;
                             }
                 }
 
                 &.has_submenu:hover{
-                    a {
+                    >a {
                         border-bottom: 3px solid $red;
                     }
                 }
 
                 &:hover{
-                    ul {
+                    >ul {
                             display: block;
                         }
                 }
 
-                &>ul {
+                >ul {
                     display: none;
                     position: absolute;
                     list-style: none;
@@ -46,11 +46,11 @@
                     box-shadow: 0 5px 6.8px 0.2px $black;
                     width: 250px;
 
-                    &>li+li {
+                    >li+li {
                             margin-top: 10px;
                         }
 
-                    &>li{
+                    >li{
                         a {
                             text-decoration: none;
                             color: $brown;
