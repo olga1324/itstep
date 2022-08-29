@@ -88,6 +88,7 @@
     align-items: stretch;
     align-content: stretch;
     min-width: auto;
+    height: auto;
 }
 
 .team-title h4 {
@@ -110,6 +111,7 @@
 
 .team-title {
     text-align: center;
+    height: auto;
 }
 
 p {
@@ -124,7 +126,7 @@ p {
 .contacts {
     background: #000;
     display: flex;
-    height: 450px;
+    height: auto;
     width: 100%;
     justify-content: stretch;
     flex-flow: row wrap;
@@ -149,19 +151,24 @@ p {
     margin: 5px;
     font-family: 'Roboto', sans-serif;
     padding: 60px 60px 0px 60px;
+    height: auto;
 }
 
-.phone p {
+.phone {
     font-size: 16px;
     text-align: center;
     padding: 0px;
     margin: 30px;
+   
+}
+
+a{
+    text-decoration: none;
     color: #fff;
 }
 
 @media(max-width: 599px) {
     .image {
-       
         height: 350px;
         background-size: 599px 450px;
         background-position: 50% 50%;
@@ -173,9 +180,10 @@ p {
         background-size: 400px 250px;
         background-position: 50% 50%;
     }
-
+    
     .team-title {
             text-align: center;
+            height: auto;
         }
 
     .footer {
@@ -183,7 +191,8 @@ p {
     }
 
     .contacts {
-        height: 600px;
+        height: auto;
+        
     }
 
     .contact p {
@@ -198,9 +207,10 @@ p {
 
     .contact-phone h2 {
         padding: 10px 25px 0px 25px;
+        width: 100%;
     }
 
-    .phone p {
+    .phone  {
         padding: 10px 40px 30px 40px;
     }
 }
@@ -213,7 +223,6 @@ p {
     }
 
     .image9 {
-        
         height: 400px;
         background-size: 400px 270px;
         background-position: 50% 50%;
@@ -221,6 +230,7 @@ p {
 
     .team-title {
         text-align: center;
+        height: auto;
     }
 
     p {
@@ -234,8 +244,7 @@ p {
     .contact p {
         padding: 50px 25px 0px 25px;
         line-height: 25px;
-        margin: 20px 50px 25px 50px;
-        ;
+        margin: 20px 50px 25px 50px;  
     }
 
     .adress p {
@@ -249,7 +258,7 @@ p {
         padding: 10px 25px 0px 25px;
     }
 
-    .phone p {
+    .phone  {
         padding: 10px 40px 30px 40px;
         margin: 5px 150px 5px 150px;
         white-space: pre;
@@ -258,9 +267,7 @@ p {
 
 @media (min-width: 768px) {
     .image {
-        width: 50%;
-        height: 350px;
-        background-position: 50% 50%;
+        width: 50%;  
     }
 
     .image9 {
@@ -273,19 +280,19 @@ p {
     .team-title {
         width: 50%;
         text-align: center;
+        height: auto;
     }
 
     .team-title h2 {
         margin: 5px 40px 10px 40px;
     }
 
-    
     p {
         margin: 20px 40px 50px 40px;
     }
 
     .contacts {
-        height: 350px;
+        height: auto;
     }
 
     .contact {
@@ -308,7 +315,7 @@ p {
         margin: 5px 80px 5px 80px;
     }
 
-    .phone p {
+    .phone  {
         padding: 30px 0px 30px 0px;
         margin: 5px 80px 5px 80px;
         white-space: pre;
@@ -332,8 +339,8 @@ p {
     .team-title {
         width: 50%;
         text-align: center;
+        height: auto;
     }
-
     
     p {
         margin: 20px 85px 50px 85px;
@@ -359,7 +366,7 @@ p {
         margin: 5px 100px 5px 100px;
     }
 
-    .phone p {
+    .phone  {
         padding: 30px 0px 30px 0px;
         margin: 5px 80px 5px 80px;
         white-space: pre;
@@ -382,15 +389,15 @@ p {
     .team-title {
         width: 50%;
         text-align: center;
+        height: auto;
     }
 
     p {
         margin: 20px 60px 50px 60px;
     }
 
-
     .contacts {
-        height: 300px;
+        height: auto;
     }
 
     .contact {
@@ -413,7 +420,7 @@ p {
         margin: 5px 100px 5px 100px;
     }
 
-    .phone p {
+    .phone  {
         padding: 30px 0px 30px 0px;
         margin: 5px 80px 5px 80px;
         white-space: pre;
