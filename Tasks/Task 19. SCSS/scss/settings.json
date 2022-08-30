@@ -9,7 +9,7 @@
     "workbench.iconTheme": "vscode-icons",
     "grunt.autoDetect": "on",
     "json.maxItemsComputed": 50000,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "vsicons.dontShowNewVersionMessage": true,
     "editor.formatOnPaste": true,
     "[html]": {
