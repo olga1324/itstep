@@ -1,0 +1,160 @@
+.menu {
+    display: flex;
+    height: 90px;
+    width: 1295px;
+    align-items: center;
+    background: $lightgreen;
+    flex-direction: row;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            padding-right: 80px;
+
+            a {
+                color: $white;
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__reception {
+
+        a {
+            color: $black;
+            font-size: 16px;
+            line-height: 19px;
+            margin-right: 10px;
+            text-decoration: none;
+            padding: 10px 15px 8px;
+            background-color: $white;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    height: 533px;
+    width: 1295px;
+    align-items: center;
+    background: $lightgreen;
+    flex-direction: row;
+
+    h2 {
+        color: $white;
+        text-align: left;
+        font-size: 48px;
+        font-family: 'Golroy', sans-serif;
+        font-style: normal;
+    }
+
+    p {
+        color: $white;
+        text-align: left;
+        font-size: 14px;
+        font-family: 'Golroy', sans-serif;
+        font-style: normal;
+        margin-right: 120px;
+        margin-bottom: 40px;
+    }
+
+    &__more {
+
+        a {
+            color: $white;
+            font-size: 18px;
+            margin-right: 10px;
+            text-decoration: none;
+            padding: 15px 25px 14px;
+            background-color: $darkgreen;
+            text-transform: uppercase;
+            font-family: 'Golroy', sans-serif;
+            font-style: normal;
+            line-height: 21px;
+        }
+    }
+
+    &__navigation {
+
+        a {
+            margin-left: 345px;
+            
+            img{
+                margin-top: 70px;
+            }
+        
+        }
+    }
+}
+
+.services {
+    display: flex;
+    height: 80px;
+    width: 1295px;
+    align-items: center;
+
+    background: $lightgreen;
+    flex-direction: row;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+
+        li {
+
+            border-right: 1px;
+            display: flex;
+            height: 81px;
+
+
+            a {
+                color: $white;
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration: none;
+                display: inline-block;
+                font-family: 'Golroy', sans-serif;
+                font-style: normal;
+
+                &.complex {
+                    display: flex;
+                    height: 81px;
+                    width: 648px;
+                    background: $darkgreen;
+                    align-items: center;
+                    margin-top: -2px;
+                    justify-content: center;
+
+                }
+
+                &.education {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 81px;
+                    width: 324px;
+                    text-align: center;
+                }
+
+                &.vip {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 81px;
+                    width: 324px;
+                    background: $darkgreen;
+                    text-align: center;
+                    margin-top: -2px;
+                }
+
+            }
+        }
+    }
+}
