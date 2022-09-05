@@ -1,0 +1,86 @@
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+
+    &__recommendation {
+        display: flex;
+        height: 504px;
+        width: 520px;
+        align-items: center;
+        background: $lightgreen;
+        flex-direction: column;
+        margin: 120px 24px 10px 0px;
+
+        &__news {
+            margin: 44px 376px 30px 55px;
+
+            a {
+                color: $white;
+                font-size: 18px;
+                text-decoration: none;
+                padding: 9px 15px 10px;
+                background-color: $darkgreen;
+                text-transform: uppercase;
+                font-family: 'Golroy', sans-serif;
+                font-style: normal;
+                line-height: 21px;
+
+            }
+        }
+
+        &__on {
+            height: 151px;
+            background-color: $darkgreen;
+            color: $white;
+            font-size: 18px;
+            padding: 35px 40px;
+            text-align: left;
+            justify-content: center;
+        }
+
+        &__off {
+            height: 151px;
+            background-color: $lightgreen;
+            color: $white;
+            font-size: 18px;
+            padding: 35px 40px;
+            text-align: left;
+            justify-content: center;
+        }
+    }
+
+    &__read {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 504px;
+        width: 775px;
+        align-items: center;
+        background: $whitegreen;
+        flex-direction: column;
+        margin: -514px 24px 10px 520px;
+
+        h4 {
+            font-size: 24px;
+            line-height: 36px;
+            padding-left: 60px;
+
+        }
+
+        ul {
+            padding-left: 60px;
+            list-style-type: square;
+
+            li {
+                font-size: 14px;
+                padding-top: 20px;
+                color: $black;
+                padding-right: 90px;
+            }
+        }
+    }
+}

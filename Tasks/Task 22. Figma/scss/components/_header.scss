@@ -1,30 +1,31 @@
-.header{
+.header {
     display: flex;
     height: 90px;
     align-items: center;
 
-    > div{
+    >div {
         display: flex;
         height: 90px;
         align-items: center;
     }
-    &__logo{
+
+    &__logo {
         border-left: 1px solid $gray;
         padding: 0 36px;
 
-        a{
+        a {
 
-            img{
-
+            img {
+                
             }
         }
     }
 
-    &__phone{
+    &__phone {
         padding: 0 30px;
         border-left: 1px solid $gray;
 
-        a{
+        a {
             color: $black;
             font-size: 16px;
             line-height: 19px;
@@ -32,10 +33,11 @@
         }
     }
 
-    &__salon{
+    &__salon {
         padding: 0 30px;
         border-left: 1px solid $gray;
-        a{
+
+        a {
             color: $black;
             font-size: 16px;
             line-height: 19px;
@@ -43,7 +45,7 @@
             display: flex;
             align-content: center;
 
-            .arrow-down{
+            .arrow-down {
                 margin-left: 15px;
                 display: inline-block;
                 height: 20px;
@@ -53,10 +55,11 @@
         }
     }
 
-    &__special{
+    &__special {
         padding: 0 30px;
         border-left: 1px solid $gray;
-        a{
+
+        a {
             font-size: 14px;
             line-height: 16px;
             text-transform: uppercase;
@@ -67,7 +70,7 @@
             display: flex;
             align-items: center;
 
-            .eye{
+            .eye {
                 width: 26px;
                 height: 22px;
                 display: inline-block;
@@ -77,37 +80,42 @@
         }
     }
 
-    &__social{
-        ul{
+    &__social {
+        ul {
             list-style: none;
             display: flex;
             border-left: 1px solid $gray;
             margin: 0;
             padding: 0;
 
-            li{
+            li {
                 border-right: 1px solid $gray;
                 padding: 0 24px;
                 display: flex;
                 height: 90px;
                 align-items: center;
-                a{
+
+                a {
                     display: inline-block;
                     width: 24px;
                     height: 24px;
                     background-position: center center;
-                  &.vk{
-                    background-image: url(../img/vk.png);
-                  }
-                  &.yt{
-                    background-image: url(../img/yt.png);
-                  }
-                  &.fb{
-                    background-image: url(../img/fb.png);
-                  }
-                  &.ig{
-                    background-image: url(../img/ig.png);
-                  }  
+
+                    &.vk {
+                        background-image: url(../img/vk.png);
+                    }
+
+                    &.yt {
+                        background-image: url(../img/yt.png);
+                    }
+
+                    &.fb {
+                        background-image: url(../img/fb.png);
+                    }
+
+                    &.ig {
+                        background-image: url(../img/ig.png);
+                    }
                 }
             }
         }

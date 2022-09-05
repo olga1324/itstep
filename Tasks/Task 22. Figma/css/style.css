@@ -25,7 +25,7 @@ html, body {
   height: 90px;
   width: 1295px;
   align-items: center;
-  background: #4fbfa5;
+  background: #78dec7;
   flex-direction: row;
 }
 .menu ul {
@@ -57,7 +57,7 @@ html, body {
   height: 533px;
   width: 1295px;
   align-items: center;
-  background: #4fbfa5;
+  background: #78dec7;
   flex-direction: row;
 }
 .main h2 {
@@ -100,7 +100,7 @@ html, body {
   height: 80px;
   width: 1295px;
   align-items: center;
-  background: #4fbfa5;
+  background: #78dec7;
   flex-direction: row;
 }
 .services ul {
@@ -251,6 +251,10 @@ html, body {
 
 .content {
   background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 .content__courses {
   display: flex;
@@ -269,7 +273,7 @@ html, body {
   font-size: 18px;
   text-decoration: none;
   padding: 9px 15px 10px;
-  background-color: #4fbfa5;
+  background-color: #78dec7;
   text-transform: uppercase;
   font-family: "Golroy", sans-serif;
   font-style: normal;
@@ -296,4 +300,191 @@ html, body {
 }
 .content__more img {
   margin-bottom: -10px;
+}
+.content__progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  align-items: center;
+  background: #fff;
+  flex-direction: row;
+  padding: 0px 250px 23px 40px;
+}
+.content__progress__aestetics a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  margin: 116px 470px 23px 40px;
+  padding: 9px 15px 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #78dec7;
+}
+.content__progress__statistics img {
+  background-image: url(../../img/Rectangle\ 13.png);
+  background-size: cover;
+  height: 400px;
+  width: 360px;
+  background-repeat: no-repeat;
+}
+.content__progress__statistics ul {
+  list-style-type: none;
+}
+.content__progress__statistics ul li {
+  margin-top: 20px;
+}
+.content__progress__statistics ul li .numero {
+  font-size: 48px;
+  color: #C4C4C4;
+  margin-left: 0px;
+}
+.content__progress__statistics ul li .big {
+  color: #00868A;
+  font-size: 96px;
+  margin-left: 0px;
+}
+.content__progress__statistics ul li .text {
+  font-size: 14px;
+  color: #C4C4C4;
+  margin-left: 20px;
+  width: 144px;
+  overflow-wrap: break-word;
+}
+.content__progress__statistics ul li .black {
+  font-size: 28px;
+  color: #000;
+  line-height: 42px;
+  margin-left: 20px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+}
+.articles__recommendation {
+  display: flex;
+  height: 504px;
+  width: 520px;
+  align-items: center;
+  background: #78dec7;
+  flex-direction: column;
+  margin: 120px 24px 10px 0px;
+}
+.articles__recommendation__news {
+  margin: 44px 376px 30px 55px;
+}
+.articles__recommendation__news a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 9px 15px 10px;
+  background-color: #00868A;
+  text-transform: uppercase;
+  font-family: "Golroy", sans-serif;
+  font-style: normal;
+  line-height: 21px;
+}
+.articles__recommendation__on {
+  height: 151px;
+  background-color: #00868A;
+  color: #fff;
+  font-size: 18px;
+  padding: 35px 40px;
+  text-align: left;
+  justify-content: center;
+}
+.articles__recommendation__off {
+  height: 151px;
+  background-color: #78dec7;
+  color: #fff;
+  font-size: 18px;
+  padding: 35px 40px;
+  text-align: left;
+  justify-content: center;
+}
+.articles__read {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 504px;
+  width: 775px;
+  align-items: center;
+  background: #d7ece7;
+  flex-direction: column;
+  margin: -514px 24px 10px 520px;
+}
+.articles__read h4 {
+  font-size: 24px;
+  line-height: 36px;
+  padding-left: 60px;
+}
+.articles__read ul {
+  padding-left: 60px;
+  list-style-type: square;
+}
+.articles__read ul li {
+  font-size: 14px;
+  padding-top: 20px;
+  color: #000;
+  padding-right: 90px;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  position: absolute;
+}
+.offer__actual {
+  height: 350px;
+  width: 1295px;
+}
+.offer h2 {
+  font-size: 48px;
+  line-height: 72px;
+  color: #00868A;
+  margin-top: 710px;
+  background-color: #d7ece7;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+.offer__cosmetology ul {
+  list-style: none;
+  display: flex;
+  border-left: 1px solid #C4C4C4;
+  margin: 0;
+  padding: 0;
+}
+.offer__cosmetology ul li {
+  border-right: 1px solid #C4C4C4;
+  padding: 0 24px;
+  display: flex;
+  height: 90px;
+  align-items: center;
+}
+.offer__cosmetology ul li a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+}
+.offer__cosmetology ul li a__cosmetology1 {
+  background: url(../../img/Rectangle\ 23.png);
+}
+.offer__cosmetology ul li a__cosmetology2 {
+  background: url(../../img/Rectangle\ 23\ \(1\).png);
+}
+.offer__cosmetology ul li a__cosmetology3 {
+  background: url(../../img/Rectangle\ 23\ \(2\).png);
+}
+.offer__cosmetology ul li a__cosmetology4 {
+  background: url(../../img/Rectangle\ 23\ \(3\).png);
 }/*# sourceMappingURL=style.css.map */

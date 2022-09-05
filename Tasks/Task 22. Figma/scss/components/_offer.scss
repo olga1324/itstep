@@ -1,0 +1,69 @@
+.offer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: absolute;
+
+    &__actual {
+        height: 350px;
+        width: 1295px;
+
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 72px;
+        color: $darkgreen;
+        margin-top: 710px;
+        background-color: $whitegreen;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 200px;
+
+    }
+
+    &__cosmetology {
+
+        ul {
+            list-style: none;
+            display: flex;
+            border-left: 1px solid $gray;
+            margin: 0;
+            padding: 0;
+
+            li {
+                border-right: 1px solid $gray;
+                padding: 0 24px;
+                display: flex;
+                height: 90px;
+                align-items: center;
+
+                a {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-position: center center;
+
+                    &__cosmetology1 {
+                        background: url(../../img/Rectangle\ 23.png);
+                    }
+
+                    &__cosmetology2 {
+                        background: url(../../img/Rectangle\ 23\ \(1\).png);
+                    }
+
+                    &__cosmetology3 {
+                        background: url(../../img/Rectangle\ 23\ \(2\).png);
+                    }
+
+                    &__cosmetology4 {
+                        background: url(../../img/Rectangle\ 23\ \(3\).png);
+
+                    }
+                }
+
+            }
+        }
+    }
+}
