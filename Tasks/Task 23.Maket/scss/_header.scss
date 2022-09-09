@@ -1,0 +1,124 @@
+header{
+    background-image: url(../img/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-row{
+    padding-top: 50px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        a{
+
+            img{
+
+
+            }
+        }
+    }
+    .main-menu{
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        ul{
+            list-style: none;
+            display: flex;
+            margin-bottom: 0;
+            li{
+                margin-right: 50px;
+          
+                a{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $black;
+                    text-decoration: none;     
+                   &:hover{
+                        color: $yellow;
+                   } 
+                }
+            }
+        }
+    }
+    .langs{
+        ul{
+            list-style: none;
+            display: flex;
+            margin-bottom: 0;
+            li{
+                margin-left: 10px;
+                a{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: $black;
+                    text-decoration: none;
+                    &:hover{
+                        color: $yellow;
+                    }
+                }
+                &.active{
+                    a{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+.screen-row{
+    padding: 200px 0 100px;
+}
+.screen-block{
+    width: 55%;
+}   
+.screen-title{
+    background-color: $yellow;
+    padding: 38px 49px;
+    margin-bottom: 11px;
+    h1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        text-transform: uppercase;
+        color: $black;
+    }
+}
+.screen-request{
+    background-color: $black;
+    padding: 11px;
+    display: flex;
+}
+.screen-request-info{
+    display: flex;
+    align-items: center;
+    p{
+        color: $white;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 28px;
+    }
+}
+.screen-request-link{
+    display: flex;
+    a{
+        display: block;
+        width: 230px;
+        color: $black;
+        background: $white;
+        padding: 21px 41px;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+            background-color: $yellow;
+            color: $white;
+        }
+    }
+}
