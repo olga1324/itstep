@@ -1,0 +1,45 @@
+.company {
+    background-image: url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    padding-top: 258px;
+    overflow-x: hidden;
+
+    &_logo {
+        margin-bottom: 78px;
+
+        img {
+            width: 242px;
+        }
+    }
+
+    &_polish {
+        font-size: 22px;
+        line-height: 33px;
+        text-transform: uppercase;
+        margin-bottom: 74px;
+    }
+
+    &_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+}
+
+.container_company {
+    background-color: $white;
+    padding: 68px 40px 105px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        background: $white;
+    }
+}

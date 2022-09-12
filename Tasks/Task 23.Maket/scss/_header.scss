@@ -1,68 +1,77 @@
-header{
+header {
     background-image: url(../img/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.top-row{
+
+.menu-row {
     padding-top: 50px;
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
     }
-    .logo{
-        a{
 
-            img{
+    .logo {
+        a {
 
-
-            }
+            img {}
         }
     }
-    .main-menu{
+
+    .main-menu {
         display: flex;
         align-items: center;
     }
-    .menu{
-        ul{
+
+    .menu {
+        ul {
             list-style: none;
             display: flex;
             margin-bottom: 0;
-            li{
+
+            li {
                 margin-right: 50px;
-          
-                a{
+
+                a {
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 24px;
                     color: $black;
-                    text-decoration: none;     
-                   &:hover{
+                    text-decoration: none;
+
+                    &:hover {
                         color: $yellow;
-                   } 
+                    }
                 }
             }
         }
     }
-    .langs{
-        ul{
+
+    .language {
+        ul {
             list-style: none;
             display: flex;
             margin-bottom: 0;
-            li{
+
+            li {
                 margin-left: 10px;
-                a{
+
+                a {
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 24px;
                     text-transform: uppercase;
                     color: $black;
                     text-decoration: none;
-                    &:hover{
+
+                    &:hover {
                         color: $yellow;
                     }
                 }
-                &.active{
-                    a{
+
+                &.active {
+                    a {
                         color: $yellow;
                     }
                 }
@@ -70,17 +79,21 @@ header{
         }
     }
 }
-.screen-row{
+
+.invest-row {
     padding: 200px 0 100px;
 }
-.screen-block{
+
+.invest-block {
     width: 55%;
-}   
-.screen-title{
+}
+
+.invest-title {
     background-color: $yellow;
-    padding: 38px 49px;
+    padding: 40px 30px 38px;
     margin-bottom: 11px;
-    h1{
+
+    h1 {
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
@@ -89,15 +102,20 @@ header{
         color: $black;
     }
 }
-.screen-request{
+
+.invest-market {
     background-color: $black;
     padding: 11px;
     display: flex;
+    height: 85px;
 }
-.screen-request-info{
+
+.invest-market-info {
     display: flex;
     align-items: center;
-    p{
+    padding: 19px 0px 18px;
+
+    p {
         color: $white;
         margin-bottom: 0;
         font-weight: 500;
@@ -106,17 +124,20 @@ header{
         padding: 0 28px;
     }
 }
-.screen-request-link{
+
+.invest-market-send {
     display: flex;
-    a{
+
+    a {
         display: block;
         width: 230px;
         color: $black;
         background: $white;
-        padding: 21px 41px;
+        padding: 21px 40px;
         text-decoration: none;
         text-transform: uppercase;
-        &:hover{
+
+        &:hover {
             background-color: $yellow;
             color: $white;
         }
