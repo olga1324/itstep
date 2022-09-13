@@ -8,3 +8,19 @@
         color: $white;
     }
 }
+
+.mission {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url("../img/c1.png") no-repeat;
+        background-size: cover;
+        width: 423px;
+        height: 423px;
+        right: 0;
+        top: -100px;
+        z-index: 100;
+    }
+}

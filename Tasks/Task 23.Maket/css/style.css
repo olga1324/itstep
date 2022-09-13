@@ -141,6 +141,21 @@ header {
   color: #FFFFFF;
 }
 
+.mission {
+  position: relative;
+}
+.mission::before {
+  content: "";
+  position: absolute;
+  background: url("../img/c1.png") no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 423px;
+  right: 0;
+  top: -100px;
+  z-index: 100;
+}
+
 .fertilizers {
   background: url(../img/product-bg.png) repeat-x 0 273px;
   margin-bottom: 150px;
