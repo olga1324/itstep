@@ -1,0 +1,434 @@
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #333333;
+}
+
+div {
+  background-image: url();
+  background-repeat: repeat-x;
+}
+
+header {
+  background-image: url(../img/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__row {
+  padding-top: 50px;
+}
+.menu__row .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menu__row .main__menu {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+}
+.menu__row .menu ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+  flex-direction: row;
+}
+.menu__row .menu ul li {
+  margin-right: 50px;
+}
+.menu__row .menu ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  text-decoration: none;
+}
+.menu__row .menu ul li a:hover {
+  color: #FFCD42;
+}
+.menu__row .language ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+.menu__row .language ul li {
+  margin-left: 10px;
+}
+.menu__row .language ul li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+}
+.menu__row .language ul li a:hover {
+  color: #FFCD42;
+}
+.menu__row .language ul li.active a {
+  color: #FFCD42;
+}
+
+.invest__row {
+  padding: 200px 0 100px;
+}
+
+.invest__block {
+  width: 55%;
+}
+
+.invest__title {
+  background-color: #FFCD42;
+  padding: 40px 20px 38px 30px;
+  margin-bottom: 11px;
+}
+.invest__title h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.invest__market {
+  background-color: #333333;
+  padding: 11px;
+  display: flex;
+  height: 85px;
+}
+
+.invest__market__info {
+  display: flex;
+  align-items: center;
+  padding: 19px 0px 18px;
+}
+.invest__market__info p {
+  color: #FFFFFF;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 10px;
+}
+
+.invest__market__send {
+  display: flex;
+}
+.invest__market__send a {
+  display: block;
+  width: 230px;
+  color: #333333;
+  background: #FFFFFF;
+  padding: 21px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.invest__market__send a:hover {
+  background-color: #FFCD42;
+  color: #FFFFFF;
+}
+
+.mission__text {
+  padding: 120px 15px;
+}
+.mission__text p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.fertilizers {
+  background: url(../img/product-bg.png) repeat-x 0 273px;
+  margin-bottom: 150px;
+}
+.fertilizers__title {
+  margin-bottom: 50px;
+}
+.fertilizers__title h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.fertilizers__products {
+  display: flex;
+  padding-bottom: 50px;
+}
+.fertilizers__product {
+  display: flex;
+  flex-direction: column;
+  margin-right: 11px;
+  width: calc((100% - 22px) / 3);
+  padding: 79px 39px 39px;
+  background: url(../img/icon.svg) no-repeat 39px 39px, #FFFFFF;
+}
+.fertilizers:last-child {
+  margin-right: 0;
+}
+.fertilizers__product__image {
+  margin-bottom: 25px;
+}
+.fertilizers__product__image img {
+  margin-left: -39px;
+  width: calc(100% + 39px);
+}
+.fertilizers__product__title {
+  margin-bottom: 36px;
+  padding-right: -15px;
+}
+.fertilizers__product__title a {
+  text-decoration: none;
+  color: #333333;
+}
+.fertilizers__product__title a h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.fertilizers__product__text {
+  height: 120px;
+}
+.fertilizers__product__text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+.fertilizers__product__send {
+  display: flex;
+}
+.fertilizers__product__send a {
+  display: block;
+  color: #FFFFFF;
+  background: #333333;
+  padding: 16px 37px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.fertilizers__product__send a:hover {
+  background-color: #FFCD42;
+  color: #FFFFFF;
+}
+
+.company {
+  background-image: url(../img/about.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  padding-top: 258px;
+  overflow-x: hidden;
+}
+.company .container {
+  background-color: #FFFFFF;
+  padding: 68px 98px 105px 40px;
+  margin-right: 0;
+  padding-right: 0;
+}
+.company__logo {
+  margin-bottom: 78px;
+}
+.company__logo img {
+  width: 242px;
+}
+.company__polish {
+  font-size: 22px;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin-bottom: 74px;
+  padding-right: 10px;
+}
+.company__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 74px;
+  padding-right: 445px;
+}
+
+footer {
+  margin-top: 300px;
+  background-color: #FFCD42;
+  background-image: url(../img/contact-lg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.contact {
+  width: 50%;
+}
+.contact__form {
+  background: #FFFFFF;
+  padding: 70px 50px 50px;
+  margin-top: -50px;
+  width: 513px;
+  float: left;
+}
+.contact__form__title {
+  margin-bottom: 43px;
+}
+.contact__form__title h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.contact .mb-3 {
+  margin-bottom: 12px !important;
+  display: flex;
+}
+.contact .mb-3 input[type=text] {
+  border: 1px solid #D8D8D8;
+  padding: 13px 10px 12px 10px;
+  color: #000000;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 0;
+}
+.contact .mb-3 textarea {
+  border: 1px solid #D8D8D8;
+  padding: 13px 10px 12px 10px;
+  color: #000000;
+  font-size: 12px;
+  line-height: 15px;
+  height: 100px;
+  border-radius: 0;
+  resize: none;
+}
+.contact .mb-3 button {
+  display: block;
+  color: #FFFFFF;
+  background: #333333;
+  padding: 15px 31px;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.contact .mb-3 button:hover {
+  background-color: #FFCD42;
+  color: #FFFFFF;
+}
+.contact .mb-3 .styled_checkbox {
+  width: 33%;
+  position: relative;
+  padding-top: 30px;
+  margin-bottom: 18px;
+}
+.contact .mb-3 .styled_checkbox label {
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.contact .mb-3 .styled_checkbox label::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #D8D8D8;
+  top: -24px;
+}
+.contact .mb-3 .styled_checkbox input {
+  display: none;
+}
+.contact .mb-3 .styled_checkbox input:checked + label::after {
+  top: -24px;
+  left: 0;
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/check.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contact .contact_form_send {
+  display: flex;
+  flex-direction: row;
+}
+.contact .contact_form_send_button {
+  width: 50%;
+}
+.contact .contact_form_error {
+  width: 50%;
+  background: #F8F8F8;
+  border-left: 4px solid #FC7E7E;
+  padding: 6px 14px;
+  font-size: 9px;
+  line-height: 14px;
+  color: #000000;
+  margin-left: 11px;
+}
+.contact .contact_form_error p {
+  margin-bottom: 0;
+}
+.contact .contact_form_success {
+  width: 50%;
+  background: #F8F8F8;
+  border-left: 4px solid #BDFC7E;
+  padding: 6px 14px;
+  font-size: 9px;
+  line-height: 14px;
+  color: #000000;
+  margin-left: 11px;
+}
+.contact .contact_form_success p {
+  margin-bottom: 0;
+}
+
+.contact__info {
+  width: 50%;
+  padding-left: 50px;
+  float: left;
+}
+.contact__info__text {
+  padding: 50px 10px 80px 0;
+}
+.contact__info__text p {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.contact__info__email__title h3 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.contact__info__email__telephone {
+  margin-bottom: 50px;
+}
+.contact__info__email__telephone a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #333333;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+.contact__info__adress {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.contact__info__adress p {
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  padding: 58px 0 24px;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 10px;
+  line-height: 15px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

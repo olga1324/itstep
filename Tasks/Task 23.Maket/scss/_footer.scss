@@ -7,7 +7,9 @@ footer {
 }
 
 .contact {
-    &_form {
+    width: 50%;
+
+    &__form {
         background: $white;
         padding: 70px 50px 50px;
         margin-top: -50px;
@@ -15,7 +17,7 @@ footer {
         float: left;
     }
 
-    &_form_title {
+    &__form__title {
         margin-bottom: 43px;
 
         h2 {
@@ -106,6 +108,10 @@ footer {
         }
     }
 
+    .contact_form_send{
+        display: flex;
+        flex-direction: row;
+    }
     .contact_form_send_button {
         width: 50%;
     }
@@ -141,13 +147,13 @@ footer {
     }
 }
 
-.contact_info {
-    width: calc(100% - 520px);
+.contact__info {
+    width: 50%;
     padding-left: 50px;
     float: left;
 
-    &_text {
-        padding: 91px 40px 150px 0;
+    &__text {
+        padding: 50px 10px 80px 0;
 
         p {
             font-size: 18px;
@@ -157,8 +163,8 @@ footer {
         }
     }
 
-    &_email {
-        &_title {
+    &__email {
+        &__title {
             h3 {
                 font-weight: 500;
                 font-size: 12px;
@@ -169,7 +175,7 @@ footer {
             }
         }
 
-        &_telephone {
+        &__telephone {
             margin-bottom: 50px;
 
             a {
@@ -181,12 +187,12 @@ footer {
                 text-transform: uppercase;
                 margin-right: 40px;
 
-                &:hover {}
+               
             }
         }
     }
 
-    &_adrass {
+    &__adress {
         font-size: 12px;
         line-height: 18px;
         text-transform: uppercase;

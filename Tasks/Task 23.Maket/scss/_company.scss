@@ -6,7 +6,14 @@
     padding-top: 258px;
     overflow-x: hidden;
 
-    &_logo {
+    .container{
+        background-color: $white;
+        padding: 68px 98px 105px 40px;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    &__logo {
         margin-bottom: 78px;
 
         img {
@@ -14,32 +21,23 @@
         }
     }
 
-    &_polish {
+    &__polish {
         font-size: 22px;
         line-height: 33px;
         text-transform: uppercase;
         margin-bottom: 74px;
+        padding-right: 10px;
+
+        
     }
 
-    &_text {
+    &__text {
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 74px;
+        padding-right: 445px;
     }
 
 }
 
-.container_company {
-    background-color: $white;
-    padding: 68px 40px 105px;
-    position: relative;
 
-    &::after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        top: 0;
-        right: -300px;
-        width: 300px;
-        background: $white;
-    }
-}

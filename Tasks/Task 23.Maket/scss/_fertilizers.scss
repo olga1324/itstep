@@ -2,7 +2,7 @@
     background: url(../img/product-bg.png) repeat-x 0 273px;
     margin-bottom: 150px;
 
-    &_title {
+    &__title {
         margin-bottom: 50px;
 
         h2 {
@@ -13,12 +13,13 @@
         }
     }
 
-    &_products {
+    &__products {
         display: flex;
         padding-bottom: 50px;
+        
     }
 
-    &_product {
+    &__product {
         display: flex;
         flex-direction: column;
         margin-right: 11px;
@@ -31,7 +32,7 @@
         margin-right: 0;
     }
 
-    &_product_image {
+    &__product__image {
         margin-bottom: 25px;
 
         img {
@@ -40,8 +41,9 @@
         }
     }
 
-    &_product_title {
+    &__product__title {
         margin-bottom: 36px;
+        padding-right:-15px;
 
         a {
             text-decoration: none;
@@ -55,27 +57,31 @@
         }
     }
 
-    &_product_text {
-        min-height: 100px;
+    &__product__text {
+        height: 120px;
+        
 
         p {
             font-weight: 400;
             font-size: 14px;
             line-height: 21px;
             color: $black;
+            
         }
     }
 
-    &_product_send {
+    &__product__send {
         display: flex;
+        
 
         a {
             display: block;
             color: $white;
             background: $black;
-            padding: 16px 37px;
+            padding: 16px 37px 15px;
             text-decoration: none;
             text-transform: uppercase;
+            
 
             &:hover {
                 background-color: $yellow;
