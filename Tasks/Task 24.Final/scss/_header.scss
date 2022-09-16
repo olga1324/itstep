@@ -1,0 +1,194 @@
+header{
+    background: $white ;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+}
+
+.menu__row {
+    padding-top: 50px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+
+    .main__menu {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: $black;
+
+    }
+
+    .menu {
+
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin-bottom: 0;
+            flex-direction: row;
+            margin-top: 5px;
+
+
+            li {
+                margin-right: 50px;
+                width: 60px;
+
+                a {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $black;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    .language {
+        ul {
+            list-style: none;
+            display: flex;
+            margin-bottom: 0;
+
+            li {
+                margin-left: 10px;
+
+                a {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: $black;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    .link{
+        display: flex;
+        margin-left: 70px;
+        
+            a {
+                display: block;
+                width: 230px;
+                color: $white;
+                background: $red;
+                padding: 21px 40px;
+                text-decoration: none;
+                text-align: center;
+                
+                &:hover {
+                    background-color: $white;
+                    color: $black;
+                    border:1px solid ;
+                }
+            }
+    }
+
+    .menu__title{
+
+       
+        h1{
+            size: 80px;
+            line-height: 96px;
+            width: 800px;
+            color: $black;
+        }
+    }
+
+    .menu__content{
+        width: 820px;
+        p{
+                    size: 20px;
+                        line-height: 32px;
+                        
+                        height: 96px;
+                        color: $black;
+                }
+
+        &__text{
+            display: flex;
+            flex-direction: row;
+            width: 798px;
+            height: 230px;
+
+            &__programm{
+                ul {
+                        list-style: none;
+                        display: flex;
+                        margin-bottom: 0;
+                        flex-direction: column;
+                        width: 250px;
+                        margin-top: 5px;
+                        border-right: 1px solid $black;
+                
+                
+                        li {
+                            margin-right: 50px;
+                            width: 60px;
+                
+                            a {
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: $black;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                
+                                &:hover {
+                                    color: $red;
+                                }
+                            }
+                        }
+                    }
+            }
+
+            &__veb{
+            width: 548px;
+            margin-left: 50px;
+
+                &__work{
+
+                    h4{
+                        size: 22px;
+                            line-height:27px;
+                        color: $black;
+                        text-transform: uppercase;
+                    }
+
+                    p{
+                        size: 20px;
+                            line-height: 28px;
+                            color: $black;
+                            margin-right: 150px;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
