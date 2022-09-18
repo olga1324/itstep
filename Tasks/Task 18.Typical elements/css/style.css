@@ -1,6 +1,4 @@
-.menu-news{
 
-}
 .menu-news > ul{
     list-style: none;
     display: flex;
@@ -8,9 +6,7 @@
     height:auto ;
     width: 320px; 
 }
-.menu-news > ul > li{
-    
-}
+
 .menu-news > ul > li > a{
     text-decoration: none;
     display: flex;

@@ -1,6 +1,4 @@
-.catalog{
 
-}
 .container{
     width: 100%;
     position: relative;
@@ -155,9 +153,7 @@
 header{
     background: #f2ebe3;
 }
-.main-menu{
 
-}
 .main-menu > ul{
     list-style: none;
     display: flex;
@@ -165,9 +161,7 @@ header{
     height:auto ;
     width: 250px;  
 }
-.main-menu > ul > li{
-    
-}
+
 .main-menu > ul > li > a{
     text-decoration: none;
     display: flex;

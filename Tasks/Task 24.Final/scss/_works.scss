@@ -1,0 +1,132 @@
+.works {
+    background: $white;
+    display: flex;
+
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    .container {
+        width: 1280px;
+    }
+
+    &__task {
+        width: 340px;
+        height: 286px;
+        margin-left: 50px;
+        margin-top: 150px;
+
+        &__title {
+
+            h2 {
+
+                font-size: 40px;
+                line-height: 130%;
+                text-transform: uppercase;
+                letter-spacing: 0.01em;
+            }
+
+            .red {
+                color: $red;
+            }
+        }
+
+        &__text {
+
+            p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 150%;
+                color: $black;
+            }
+
+        }
+
+        &__link {
+            padding: 20px 40px 20px 40px;
+            border: 1px solid $black;
+
+            a {
+                font-size: 20px;
+                line-height: 130%;
+
+                text-decoration: none;
+                color: $black;
+
+                display: flex;
+                align-items: center;
+
+                .arrow {
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    margin-left: 60px;
+                    padding-left: 2px;
+                    background-image: url(../img/Group\ 8\ \(1\).png);
+                }
+            }
+        }
+
+
+    }
+
+    &__all {
+        display: flex;
+        flex-direction: row;
+
+        height: 413px;
+        margin: -270px 10px 160px 440px;
+
+        &__treker {
+            &__link {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $black;
+                    font-size: 24px;
+                    line-height: 36px;
+
+                }
+            }
+        }
+
+        &__today {
+            padding-left: 20px;
+
+            &__link {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $black;
+                    font-size: 24px;
+                    line-height: 36px;
+
+                }
+            }
+        }
+
+        &__blog {
+            padding-left: 20px;
+
+            &__link {
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: $black;
+                    font-size: 24px;
+                    line-height: 36px;
+
+                }
+            }
+        }
+
+        .image {
+            height: 301px;
+            width: 240px;
+        }
+
+
+
+
+
+    }
+}
