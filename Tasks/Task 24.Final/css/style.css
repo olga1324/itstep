@@ -283,4 +283,128 @@ header {
 .works__all .image {
   height: 301px;
   width: 240px;
+}
+
+.stages {
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.stages__title {
+  width: 329px;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+.stages__title h2 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+.stages__title p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 33px;
+}
+.stages__process {
+  display: flex;
+  flex-direction: column;
+  width: 760px;
+  margin: -170px 10px 20px 450px;
+  margin-bottom: 160px;
+}
+.stages__process__level {
+  border-top: 1px solid #ffffff;
+}
+.stages__process__level__numero {
+  color: #f6523c;
+  font-size: 48px;
+  line-height: 62px;
+  width: 60px;
+  margin-right: 0px;
+  padding-top: 45px;
+}
+.stages__process__level__text {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 28px;
+  margin: -60px 10px 35px 85px;
+  text-transform: uppercase;
+}
+.stages__process__level__border {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.blog {
+  background: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blog__news {
+  width: 340px;
+  height: 286px;
+  margin-left: 50px;
+  margin-top: 150px;
+}
+.blog__news h2 {
+  font-size: 40px;
+  line-height: 130%;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.blog__news p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #000000;
+}
+.blog__news__link {
+  padding: 20px 40px 20px 40px;
+  border: 1px solid #000000;
+}
+.blog__news__link a {
+  font-size: 20px;
+  line-height: 130%;
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.blog__news__link a .arrow {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 60px;
+  padding-left: 2px;
+  background-image: url(../img/Group\ 8\ \(1\).png);
+}
+.blog__article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 453px;
+  width: 250px;
+  margin: -300px 10px 160px 470px;
+}
+.blog__article__image {
+  height: 190px;
+  width: 190px;
+  margin-left: 70px;
+}
+.blog__article__link {
+  margin-top: 60px;
+  margin-left: 105px;
+  margin-bottom: 160px;
+}
+.blog__article__link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 20px;
+  line-height: 26px;
 }/*# sourceMappingURL=style.css.map */
