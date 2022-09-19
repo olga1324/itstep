@@ -487,5 +487,173 @@ header {
   border: 1px solid #dfdfdf;
   padding: 70px 100px;
   width: 618px;
-  height: 754px;
+}
+.contact__form .mb-3 {
+  display: flex;
+}
+.contact__form .mb-3 input {
+  border: none;
+}
+.contact__form .mb-3 input[type=text] {
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 418px;
+  height: 49px;
+}
+.contact__form .mb-3 input[type=checkbox] {
+  margin-top: 40px;
+  width: 16px;
+  height: 16px;
+}
+.contact__form .mb-3 p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 35px;
+  margin-top: -20px;
+  width: 360px;
+}
+.contact__form .mb-3 .red {
+  color: #f6523c;
+}
+.contact__form .mb-3 .button {
+  display: flex;
+  background: #f6523c;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 16px 40px;
+  margin-left: 195px;
+}
+.contact__form .mb-3 .button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid;
+}
+
+footer {
+  background: #000000;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 150px;
+}
+.company__logo {
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.company h4 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 150px;
+  margin-left: 85px;
+}
+.company__about ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin-left: 85px;
+}
+.company__about ul li {
+  padding-bottom: 35px;
+}
+.company__about ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.company__about ul li a:hover {
+  color: #f6523c;
+}
+.company__services ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  margin-left: 85px;
+}
+.company__services ul li {
+  padding-bottom: 32px;
+}
+.company__services ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.company__services ul li a:hover {
+  color: #f6523c;
+}
+.company__connection h4 {
+  margin-left: 0px;
+}
+.company__connection__telephone .tel {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding-left: 2px;
+  padding-bottom: 18px;
+  background-repeat: no-repeat;
+  background-image: url(../img/bi_phone.png);
+}
+.company__connection__telephone a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+.company__connection__adress {
+  width: 341px;
+}
+.company__connection__adress .map {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding-left: 2px;
+  background-repeat: no-repeat;
+  padding-bottom: 18px;
+  background-image: url(..//img/Group\ \(1\).png);
+}
+.company__connection__adress p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.company__connection__email {
+  width: 341px;
+}
+.company__connection__email .letter {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: 2px;
+  padding-bottom: 18px;
+  background-image: url(../img/Vector\ 2.png);
+}
+.company__connection__email a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 10px;
 }/*# sourceMappingURL=style.css.map */

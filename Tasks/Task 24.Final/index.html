@@ -272,7 +272,7 @@
                         <h2> связаться с <span class="red">нами</span></h2>
                     </div>
                     <div class="contact__info__telephone">
-                    <span class="tel"></span> <a class="phone" href="tel:+33775558724">+(33) 7 75 55 87 24</a>
+                        <span class="tel"></span> <a class="phone" href="tel:+33775558724">+(33) 7 75 55 87 24</a>
                     </div>
                     <div class="contact__info__adress">
                         <p><span class="map"></span>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
@@ -301,23 +301,27 @@
                         </div>
 
                         <div class="mb-3">
-                            <textarea name="message" id="message" class="form-control" placeholder="ваше сообщение">
-                                                </textarea>
+                            <input type="text" class="form-control" id="message" placeholder="ваше сообщение">
                         </div>
+
+
                         <div class="mb-3">
                             <div class="styled_checkbox">
                                 <input type="checkbox" name="politics[]" id="politics"
                                     value="Политика конфиденциальности">
-                                <label for="politics">Я согласен с Политикой конфиденциальности и даю разрешение на
-                                    обработку моих персональных данных для целей, указанных в
-                                    <span class="red">Политике конфиденциальности</span> .</label>
+                                <label for="politics">
+                                    <p>Я согласен с Политикой конфиденциальности и даю разрешение на
+                                        обработку моих персональных данных для целей, указанных в
+                                        <span class="red">Политике конфиденциальности</span> .
+                                    </p>
+                                </label>
                             </div>
                         </div>
 
-                        <div class="mb-3 contact_form_link">
-                            <div class="contact_form_link_button">
-                                <button type="submit">отправить</button>
-                            </div>
+                        <div class="mb-3">
+
+                            <a href="#" class="button">Отправить</a>
+
 
 
                         </div>
@@ -329,7 +333,62 @@
 
     <footer>
         <div class="container">
-            <div class="row"></div>
+            <div class="row">
+                <div class="company">
+                    <div class="company__logo">
+                    <a href="#">
+                        <img src="./img/SparkIT.png" alt="SparkIt" title="SparkIt">
+                    </a>
+                    </div>
+
+
+                    <div class="company__about">
+                        <h4>о компании</h4>
+                            <ul>
+                                <li><a href="#">Портфолио</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Карьера</a></li>
+                                
+                            </ul>
+                    </div>
+
+
+                    <div class="company__services">
+                        <h4>услуги</h4>
+                        <ul>
+                            <li><a href="#">архитектура приложений</a></li>
+                            <li><a href="#">web разработка</a></li>
+                            <li><a href="#">ux/ui дизайн</a></li>
+                            <li><a href="#">бизнес анализ</a></li>
+                            <li><a href="#">2d/3d анимация</a></li>
+                        
+                        </ul>
+                    </div>
+
+
+                    <div class="company__connection">
+                        <h4>связаться с нами</h4>
+                        <div class="company__connection__telephone">
+                            <span class="tel"></span> <a class="phone" href="tel:+33775558724">+(33) 7 75 55 87 24</a>
+                        </div>
+                        <div class="company__connection__adress">
+                            <p><span class="map"></span>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+                        </div>
+                        <div class="company__connection__email">
+                            <a class="mail" href="SpakIT@gmail.com"><span class="letter"></span>SpakIT@gmail.com</a>
+                        </div>
+                        <div class="company__connection__social">
+                            <ul>
+                                <li><a href="#" class="tl"></a></li>
+                                <li><a href="#" class="wr"></a></li>
+                                <li><a href="#" class="be"></a></li>
+                                <li><a href="#" class="in"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
