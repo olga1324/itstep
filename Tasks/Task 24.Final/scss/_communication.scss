@@ -47,26 +47,23 @@
         padding-right: -15px;
         color: $white;
 
-            h4 {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 33px;
-                text-transform: uppercase;
-            }
-    
+        h4 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: uppercase;
+        }
+
     }
 
     &__group__text {
         height: 120px;
-
 
         p {
             font-weight: 400;
             font-size: 20px;
             line-height: 30 px;
             color: $white;
-
         }
     }
-
 }

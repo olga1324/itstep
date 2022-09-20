@@ -15,6 +15,9 @@ header {
   justify-content: space-between;
   flex-wrap: nowrap;
   flex-direction: row;
+  margin-bottom: 160px;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 .menu__row {
@@ -114,17 +117,19 @@ header {
 .menu__row .menu__content__text__programm ul {
   list-style: none;
   display: flex;
-  margin-bottom: 0;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: column;
+  float: left;
   flex-direction: column;
 }
 .menu__row .menu__content__text__programm ul li {
   margin-right: 50px;
-}
-.menu__row .menu__content__text__programm ul li__veb a:hover ul {
-  display: block;
-  position: absolute;
-  top: 335px;
-  left: 400px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+  z-index: 10000;
+  width: 250px;
 }
 .menu__row .menu__content__text__programm ul li a {
   font-weight: 600;
@@ -137,6 +142,20 @@ header {
 .menu__row .menu__content__text__programm ul li a:hover {
   color: #f6523c;
 }
+.menu__content__text__programm ul li ul{
+  left: -9999px;
+  opacity: 0;
+  position: absolute;
+
+}
+.menu__content__text__programm ul li:hover ul{
+  top: 5px;
+  left: 230px;
+  opacity: 1;
+  border-left:1px solid #000000 ;
+  padding-left: 20px;
+}
+
 
 .communication {
   background: #000000;
@@ -199,12 +218,13 @@ header {
 
 .works {
   background: #ffffff;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
 .works .container {
   width: 1280px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .works__task {
   width: 340px;
@@ -228,16 +248,18 @@ header {
   color: #000000;
 }
 .works__task__link {
-  padding: 20px 40px 20px 40px;
-  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 .works__task__link a {
   font-size: 20px;
   line-height: 130%;
   text-decoration: none;
   color: #000000;
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
+  padding: 21px 40px;
+  border: 1px solid;
 }
 .works__task__link a .arrow {
   width: 16px;
@@ -246,6 +268,17 @@ header {
   margin-left: 60px;
   padding-left: 2px;
   background-image: url(../img/Group\ 8\ \(1\).png);
+}
+.works__task__link a:hover {
+  display: inline-block;
+  width: 250px;
+  color: #ffffff;
+  background: #f6523c;
+  padding: 21px 40px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 40px;
+  border: 1px solid #f6523c;
 }
 .works__all {
   display: flex;
@@ -260,6 +293,9 @@ header {
   font-size: 24px;
   line-height: 36px;
 }
+.works__all__treker__link a:hover {
+  color: #f6523c;
+}
 .works__all__today {
   padding-left: 20px;
 }
@@ -270,6 +306,9 @@ header {
   font-size: 24px;
   line-height: 36px;
 }
+.works__all__today__link a:hover {
+  color: #f6523c;
+}
 .works__all__blog {
   padding-left: 20px;
 }
@@ -279,6 +318,9 @@ header {
   color: #000000;
   font-size: 24px;
   line-height: 36px;
+}
+.works__all__blog__link a:hover {
+  color: #f6523c;
 }
 .works__all .image {
   height: 301px;
@@ -364,16 +406,18 @@ header {
   color: #000000;
 }
 .blog__news__link {
-  padding: 20px 40px 20px 40px;
-  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 .blog__news__link a {
   font-size: 20px;
   line-height: 130%;
   text-decoration: none;
   color: #000000;
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
+  padding: 21px 40px;
+  border: 1px solid;
 }
 .blog__news__link a .arrow {
   width: 16px;
@@ -382,6 +426,17 @@ header {
   margin-left: 60px;
   padding-left: 2px;
   background-image: url(../img/Group\ 8\ \(1\).png);
+}
+.blog__news__link a:hover {
+  display: inline-block;
+  width: 250px;
+  color: #ffffff;
+  background: #f6523c;
+  padding: 21px 40px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 40px;
+  border: 1px solid #f6523c;
 }
 .blog__article {
   display: flex;
@@ -407,6 +462,9 @@ header {
   color: #000000;
   font-size: 20px;
   line-height: 26px;
+}
+.blog__article__link a:hover {
+  color: #f6523c;
 }
 
 .contact {
@@ -445,6 +503,9 @@ header {
   text-transform: uppercase;
   margin-right: 40px;
 }
+.contact__info__telephone a:hover {
+  color: #f6523c;
+}
 .contact__info__adress {
   width: 341px;
 }
@@ -479,6 +540,9 @@ header {
   text-decoration: none;
   color: #000000;
 }
+.contact__info__email a:hover {
+  color: #f6523c;
+}
 .contact__form {
   display: flex;
   flex-direction: row;
@@ -486,7 +550,7 @@ header {
   margin: -250px 10px 160px 570px;
   border: 1px solid #dfdfdf;
   padding: 70px 100px;
-  width: 618px;
+  width: 430px;
 }
 .contact__form .mb-3 {
   display: flex;
@@ -617,6 +681,9 @@ footer {
   margin-right: 40px;
   margin-top: 10px;
 }
+.company__connection__telephone a:hover {
+  color: #f6523c;
+}
 .company__connection__adress {
   width: 341px;
 }
@@ -656,4 +723,7 @@ footer {
   text-decoration: none;
   color: #ffffff;
   padding-top: 10px;
+}
+.company__connection__email a:hover {
+  color: #f6523c;
 }/*# sourceMappingURL=style.css.map */
