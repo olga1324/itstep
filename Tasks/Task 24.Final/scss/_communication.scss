@@ -11,6 +11,12 @@
         line-height: 64px;
         width: 600px;
         margin: 150px 60px;
+
+        @media (min-width: 1920px) {
+                font-size: 40px;
+                line-height: 64px;
+                width: 1300px;
+            }
     }
 
     &__groups {
@@ -23,8 +29,9 @@
         display: flex;
         flex-direction: column;
         margin-right: 11px;
-        width: calc((100% - 22px) / 3);
+        width: 460px;
         padding: 0px 39px 39px;
+        
     }
 
     &:last-child {
@@ -34,12 +41,12 @@
     &__group__image {
         margin-left: 50px;
         margin-bottom: 25px;
-        width: 40px;
-        height: 40px;
+       
 
         img {
             margin-left: -39px;
-            width: calc(100% + 39px);
+            width: 40px;
+            height: 40px;
         }
     }
 
@@ -48,7 +55,7 @@
         color: $white;
 
         h4 {
-            font-weight: 600;
+            font-weight: 500;
             font-size: 24px;
             line-height: 33px;
             text-transform: uppercase;
@@ -60,7 +67,7 @@
         height: 120px;
 
         p {
-            font-weight: 400;
+            font-weight: 500;
             font-size: 20px;
             line-height: 30 px;
             color: $white;

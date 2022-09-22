@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Mulish";
   src: url(../../fonts/Mulish-VariableFont_wght.ttf);
@@ -47,10 +48,16 @@ header {
 }
 .menu__row .menu ul li a {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+@media (min-width: 1920px) {
+  .menu__row .menu ul li a {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 .menu__row .menu ul li a:hover {
   color: #f6523c;
@@ -62,6 +69,7 @@ header {
 }
 .menu__row .language ul li {
   margin-left: 10px;
+  margin-top: -10px;
 }
 .menu__row .language ul li a {
   font-weight: 600;
@@ -70,6 +78,12 @@ header {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+@media (min-width: 1920px) {
+  .menu__row .language ul li a {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 .menu__row .language ul li a:hover {
   color: #f6523c;
@@ -89,6 +103,8 @@ header {
   padding: 21px 40px;
   text-decoration: none;
   text-align: center;
+  font-size: 18px;
+  line-height: 22px;
 }
 .menu__row .link a:hover {
   background-color: #ffffff;
@@ -101,14 +117,34 @@ header {
   width: 800px;
   color: #000000;
 }
+@media (min-width: 1920px) {
+  .menu__row .menu__title h1 {
+    width: 1100px;
+  }
+}
 .menu__row .menu__content {
-  width: 820px;
+  width: 100%;
+}
+@media (min-width: 1920px) {
+  .menu__row .menu__content {
+    background-image: url(../img/график\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 50%;
+    height: 546px;
+    width: 1725px;
+  }
 }
 .menu__row .menu__content p {
   font-size: 20px;
   line-height: 32px;
   height: 96px;
   color: #000000;
+}
+@media (min-width: 1920px) {
+  .menu__row .menu__content p {
+    width: 800px;
+  }
 }
 .menu__row .menu__content__text {
   display: flex;
@@ -119,7 +155,6 @@ header {
   display: flex;
   margin: 0px;
   padding: 0px;
-  flex-direction: column;
   float: left;
   flex-direction: column;
 }
@@ -129,7 +164,37 @@ header {
   position: relative;
   padding-bottom: 20px;
   z-index: 10000;
-  width: 250px;
+  font-size: 20px;
+  line-height: 25px;
+}
+.menu__row .menu__content__text__programm ul li ul {
+  left: -9999px;
+  opacity: 0;
+  position: absolute;
+  list-style: none;
+}
+.menu__row .menu__content__text__programm ul li ul li {
+  padding-top: 1px;
+  float: none;
+}
+.menu__row .menu__content__text__programm ul li ul li h4 {
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 27px;
+}
+.menu__row .menu__content__text__programm ul li ul li p {
+  width: 438px;
+}
+.menu__row .menu__content__text__programm ul li ul a {
+  display: block;
+  white-space: nowrap;
+}
+.menu__row .menu__content__text__programm ul li:hover ul {
+  left: 250px;
+  top: 0px;
+  opacity: 1;
+  border-left: 1px solid #000000;
+  padding-left: 30px;
 }
 .menu__row .menu__content__text__programm ul li a {
   font-weight: 600;
@@ -142,20 +207,6 @@ header {
 .menu__row .menu__content__text__programm ul li a:hover {
   color: #f6523c;
 }
-.menu__content__text__programm ul li ul{
-  left: -9999px;
-  opacity: 0;
-  position: absolute;
-
-}
-.menu__content__text__programm ul li:hover ul{
-  top: 5px;
-  left: 230px;
-  opacity: 1;
-  border-left:1px solid #000000 ;
-  padding-left: 20px;
-}
-
 
 .communication {
   background: #000000;
@@ -171,6 +222,13 @@ header {
   width: 600px;
   margin: 150px 60px;
 }
+@media (min-width: 1920px) {
+  .communication__text {
+    font-size: 40px;
+    line-height: 64px;
+    width: 1300px;
+  }
+}
 .communication__groups {
   display: flex;
   padding-bottom: 50px;
@@ -180,7 +238,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-right: 11px;
-  width: calc((100% - 22px) / 3);
+  width: 460px;
   padding: 0px 39px 39px;
 }
 .communication:last-child {
@@ -189,19 +247,18 @@ header {
 .communication__group__image {
   margin-left: 50px;
   margin-bottom: 25px;
-  width: 40px;
-  height: 40px;
 }
 .communication__group__image img {
   margin-left: -39px;
-  width: calc(100% + 39px);
+  width: 40px;
+  height: 40px;
 }
 .communication__group__title {
   padding-right: -15px;
   color: #ffffff;
 }
 .communication__group__title h4 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 33px;
   text-transform: uppercase;
@@ -210,7 +267,7 @@ header {
   height: 120px;
 }
 .communication__group__text p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 30 px;
   color: #ffffff;
@@ -225,6 +282,11 @@ header {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (min-width: 1920px) {
+  .works .container {
+    height: 1022px;
+  }
 }
 .works__task {
   width: 340px;
@@ -269,6 +331,12 @@ header {
   padding-left: 2px;
   background-image: url(../img/Group\ 8\ \(1\).png);
 }
+.works__task__link a .arrow:hover {
+  background-image: url(../img/Group\ 8\ \(2\).png);
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  padding-left: 2px;
+}
 .works__task__link a:hover {
   display: inline-block;
   width: 250px;
@@ -296,8 +364,47 @@ header {
 .works__all__treker__link a:hover {
   color: #f6523c;
 }
+.works__all__treker__content {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .works__all__treker__content {
+    display: block;
+    width: 410px;
+  }
+  .works__all__treker .img-sm {
+    width: 410px;
+    height: 500px;
+  }
+  .works__all__treker__link {
+    margin-top: 235px;
+  }
+}
 .works__all__today {
   padding-left: 20px;
+}
+.works__all__today .img-lg {
+  display: none;
+}
+.works__all__today__content {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .works__all__today .img-md {
+    display: none;
+  }
+  .works__all__today .img-lg {
+    display: block;
+    width: 410px;
+    height: 500px;
+  }
+  .works__all__today__content {
+    display: block;
+    width: 410px;
+  }
+  .works__all__today__link {
+    margin-top: 235px;
+  }
 }
 .works__all__today__link a {
   text-decoration: none;
@@ -322,9 +429,26 @@ header {
 .works__all__blog__link a:hover {
   color: #f6523c;
 }
+.works__all__blog__content {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .works__all__blog__content {
+    display: block;
+    width: 410px;
+  }
+  .works__all__blog .img-md {
+    width: 410px;
+    height: 500px;
+  }
+  .works__all__blog__link {
+    margin-top: 235px;
+  }
+}
 .works__all .image {
   height: 301px;
   width: 240px;
+  margin-bottom: 40px;
 }
 
 .stages {

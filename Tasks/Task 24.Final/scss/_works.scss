@@ -8,6 +8,12 @@
         flex-direction: row;
         justify-content: space-between;
 
+        @media (min-width: 1920px) {
+            height: 1022px;
+            
+
+        }
+
     }
 
     &__task {
@@ -62,6 +68,14 @@
                     margin-left: 60px;
                     padding-left: 2px;
                     background-image: url(../img/Group\ 8\ \(1\).png);
+
+                    &:hover {
+                        background-image: url(../img/Group\ 8\ \(2\).png);
+                        background-repeat: no-repeat;
+                        margin-left: 60px;
+                        padding-left: 2px;
+
+                    }
                 }
 
                 &:hover {
@@ -74,6 +88,7 @@
                     text-align: center;
                     padding: 20px 40px;
                     border: 1px solid $red;
+
                 }
             }
         }
@@ -94,15 +109,73 @@
                     font-size: 24px;
                     line-height: 36px;
 
+
                     &:hover {
                         color: $red;
                     }
                 }
             }
+
+            &__content {
+                display: none;
+            }
+
+            @media (min-width: 1920px) {
+
+
+                &__content {
+                    display: block;
+                    width: 410px;
+                }
+
+                .img-sm {
+
+                    width: 410px;
+                    height: 500px;
+                }
+
+                &__link {
+                    margin-top: 235px;
+                }
+
+
+
+            }
         }
 
         &__today {
             padding-left: 20px;
+
+            .img-lg {
+                display: none;
+            }
+
+            &__content {
+                display: none;
+            }
+
+            @media (min-width: 1920px) {
+                .img-md {
+                    display: none;
+                }
+
+                .img-lg {
+                    display: block;
+                    width: 410px;
+                    height: 500px;
+                }
+
+                &__content {
+                    display: block;
+                    width: 410px;
+
+                }
+
+                &__link {
+                    margin-top: 235px;
+                }
+
+            }
 
             &__link {
                 a {
@@ -117,6 +190,8 @@
                     }
                 }
             }
+
+
         }
 
         &__blog {
@@ -135,11 +210,35 @@
                     }
                 }
             }
+
+            &__content {
+                display: none;
+            }
+
+            @media (min-width: 1920px) {
+
+                &__content {
+                    display: block;
+                    width: 410px;
+                }
+
+                .img-md {
+
+                    width: 410px;
+                    height: 500px;
+                }
+
+                &__link {
+                    margin-top: 235px;
+                }
+
+            }
         }
 
         .image {
             height: 301px;
             width: 240px;
+            margin-bottom: 40px;
         }
     }
 }
