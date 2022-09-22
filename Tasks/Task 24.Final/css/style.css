@@ -551,6 +551,12 @@ header {
   padding-left: 2px;
   background-image: url(../img/Group\ 8\ \(1\).png);
 }
+.blog__news__link a .arrow:hover {
+  background-image: url(../img/Group\ 8\ \(2\).png);
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  padding-left: 2px;
+}
 .blog__news__link a:hover {
   display: inline-block;
   width: 250px;
@@ -565,10 +571,9 @@ header {
 .blog__article {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   height: 453px;
   width: 250px;
-  margin: -300px 10px 160px 470px;
+  margin: -300px 20px 160px 470px;
 }
 .blog__article__image {
   height: 190px;
@@ -577,8 +582,8 @@ header {
 }
 .blog__article__link {
   margin-top: 60px;
-  margin-left: 105px;
-  margin-bottom: 160px;
+  margin-bottom: 18px;
+  text-align: start;
 }
 .blog__article__link a {
   text-decoration: none;
@@ -589,6 +594,18 @@ header {
 }
 .blog__article__link a:hover {
   color: #f6523c;
+}
+.blog__article__content {
+  display: none;
+}
+@media (min-width: 1920px) {
+  .blog__article__link {
+    width: 430px;
+  }
+  .blog__article__content {
+    display: block;
+    width: 328px;
+  }
 }
 
 .contact {
