@@ -717,7 +717,6 @@ header {
   line-height: 18px;
   margin-left: 35px;
   margin-top: -20px;
-  width: 360px;
 }
 .contact__form .mb-3 .red {
   color: #f6523c;
@@ -732,12 +731,43 @@ header {
   font-size: 20px;
   line-height: 25px;
   padding: 16px 40px;
-  margin-left: 195px;
 }
 .contact__form .mb-3 .button:hover {
   background-color: #ffffff;
   color: #000000;
   border: 1px solid;
+}
+@media (min-width: 1280px) {
+  .contact__form .button {
+    margin-left: 195px;
+  }
+}
+@media (min-width: 1920px) {
+  .contact__form {
+    width: 860px;
+    height: 480px;
+  }
+  .contact__form .mb-3 {
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+  }
+  .contact__form .lg-2 {
+    width: 100%;
+    float: left;
+  }
+  .contact__form .message {
+    border-bottom: 1px solid #dfdfdf;
+    width: 100%;
+  }
+  .contact__form .styled_checkbox {
+    width: 100%;
+    padding: 5px 10px 5px 15px;
+    border-bottom: none;
+  }
+  .contact__form .button {
+    margin-left: 670px;
+  }
 }
 
 footer {
@@ -749,6 +779,7 @@ footer {
   justify-content: space-between;
   flex-direction: row;
   margin-top: 150px;
+  margin-bottom: 160px;
 }
 .company__logo {
   margin-top: 150px;
@@ -762,6 +793,11 @@ footer {
   text-transform: uppercase;
   margin-top: 150px;
   margin-left: 85px;
+}
+@media (min-width: 1920px) {
+  .company__logo {
+    display: none;
+  }
 }
 .company__about ul {
   -webkit-padding-start: 0px;
@@ -781,6 +817,11 @@ footer {
 .company__about ul li a:hover {
   color: #f6523c;
 }
+@media (min-width: 1920px) {
+  .company__about {
+    margin-left: 100px;
+  }
+}
 .company__services ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
@@ -799,6 +840,11 @@ footer {
 }
 .company__services ul li a:hover {
   color: #f6523c;
+}
+@media (min-width: 1920px) {
+  .company__services {
+    margin-left: -700px;
+  }
 }
 .company__connection h4 {
   margin-left: 0px;
@@ -867,4 +913,55 @@ footer {
 }
 .company__connection__email a:hover {
   color: #f6523c;
+}
+.company__connection__social ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.company__connection__social ul li {
+  padding: 0 24px;
+  display: flex;
+  height: 90px;
+  align-items: center;
+}
+.company__connection__social ul li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  border-radius: 50%;
+}
+.company__connection__social ul li a.tl {
+  background-image: url(../img/icon_telegram.png);
+}
+.company__connection__social ul li a.wr {
+  background-image: url(../img/icon_dribbble.png);
+}
+.company__connection__social ul li a.be {
+  background-image: url(../img/icon_behance.png);
+}
+.company__connection__social ul li a.in {
+  background-image: url(../img/icon_linkedin.png);
+}
+@media (min-width: 1920px) {
+  .company__connection {
+    margin-right: 500px;
+  }
+}
+
+.year {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  border-top: 2px solid #ffffff;
+}
+.year p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 15px;
 }/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     margin-top: 150px;
+    margin-bottom: 160px;
 
     &__logo {
         margin-top: 150px;
@@ -22,6 +23,11 @@ footer {
         margin-top: 150px;
         margin-left: 85px;
     }
+        @media(min-width:1920px) {
+            &__logo {
+                display: none;
+            }
+        }
 
     &__about {
         ul {
@@ -44,6 +50,10 @@ footer {
                 }
             }
         }
+
+                 @media(min-width:1920px) {
+                     margin-left: 100px;;
+                 }
     }
 
     &__services {
@@ -69,6 +79,11 @@ footer {
                 }
             }
         }
+
+                 @media(min-width:1920px) {
+                     margin-left: -700px;
+                     
+                 }
     }
 
     &__connection {
@@ -153,5 +168,71 @@ footer {
                 }
             }
         }
+
+                 &__social {
+                     ul {
+                         list-style: none;
+                         display: flex;
+                        
+                         margin: 0;
+                         padding: 0;
+        
+                         li {
+                             
+                             padding: 0 24px;
+                             display: flex;
+                             height: 90px;
+                             align-items: center;
+        
+                             a {
+                                 display: inline-block;
+                                 width: 30px;
+                                 height: 30px;
+                                 background-position: center center;
+                                border-radius: 50%;
+        
+                                 &.tl {
+                                     background-image: url(../img/icon_telegram.png);
+                                     
+                                 }
+        
+                                 &.wr {
+                                     background-image: url(../img/icon_dribbble.png);
+                                 }
+        
+                                 &.be{
+                                     background-image: url(../img/icon_behance.png);
+                                 }
+        
+                                 &.in {
+                                     background-image: url(../img/icon_linkedin.png);
+                                 }
+                             }
+                         }
+                     }
+                 }
+
+                                  @media(min-width:1920px) {
+                                      margin-right: 500px;
+                
+                                  }
     }
+}
+
+.year{
+   display: flex; 
+   width: 100%;
+text-align: center;
+justify-content: center;
+border-top: 2px solid $white;
+
+   p{
+    color: $white;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 15px;
+    
+
+   }
 }

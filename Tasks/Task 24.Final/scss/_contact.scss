@@ -103,6 +103,7 @@
         padding: 70px 100px;
         width: 430px;
 
+       
         .mb-3 {
             display: flex;
 
@@ -130,7 +131,7 @@
                 line-height: 18px;
                 margin-left: 35px;
                 margin-top: -20px;
-                width: 360px;
+                
             }
 
             .red {
@@ -147,7 +148,7 @@
                 font-size: 20px;
                 line-height: 25px;
                 padding: 16px 40px;
-                margin-left: 195px;
+                
 
                 &:hover {
                     background-color: $white;
@@ -155,6 +156,52 @@
                     border: 1px solid;
                 }
             }
+
+            
         }
+
+                        @media(min-width: 1280px) {
+                            .button {
+                                margin-left: 195px;
+                            }
+                        }
+
+                 @media (min-width: 1920px) {
+        
+                     width: 860px;
+                     height: 480px;
+        
+                     .mb-3 {
+                         width: 50%;
+                         float: left;
+                         margin-bottom: 40px;
+                         
+                     }
+        
+                     .lg-2 {
+                         width: 100%;
+                         float: left;
+                        
+          
+                     }
+                     .message{
+                        border-bottom: 1px solid $gray;
+                        width: 100%;
+                     }
+
+                                         .styled_checkbox {
+                                             width: 100%;
+                                             padding: 5px 10px 5px 15px;
+                                             border-bottom: none;
+                                         }
+
+                     .button{
+                        margin-left: 670px;
+                     }
+        
+        
+                 }
+
+                 
     }
 }

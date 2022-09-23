@@ -62,22 +62,21 @@
                 border: 1px solid;
 
                 .arrow {
-                    width: 16px;
-                    height: 16px;
-                    display: inline-block;
-                    margin-left: 60px;
-                    padding-left: 2px;
-                    background-image: url(../img/Group\ 8\ \(1\).png);
-
-                    &:hover {
-                        background-image: url(../img/Group\ 8\ \(2\).png);
-                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
                         margin-left: 60px;
                         padding-left: 2px;
-
+                        background-image: url(../img/Group\ 8\ \(1\).png);
+                
+                        &:hover {
+                            background-image: url(../img/Group\ 8\ \(2\).png);
+                            background-repeat: no-repeat;
+                            margin-left: 60px;
+                            padding-left: 2px;
+                
+                        }
                     }
-                }
-
                 &:hover {
                     display: inline-block;
                     width: 250px;
