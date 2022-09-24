@@ -1,0 +1,142 @@
+.mobile {
+    padding: 51px 21px;
+    position: fixed;
+    width: 100%;
+    max-width: 440px;
+    background: $black;
+    top: 0;
+    left: -440px;
+    transition: left .5s;
+
+    &.open {
+        left: 0;
+    }
+
+    &_head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_logo {
+        a {
+            text-decoration: none;
+
+            img {
+                width: 124px;
+            }
+        }
+    }
+
+    &_close {
+        display: flex;
+
+        a {
+            width: 39px;
+            height: 39px;
+            background: url("../img/x.svg");
+        }
+    }
+
+    &_menu {
+        ul {
+            list-style: none;
+            text-align: start;
+            padding: 70px 0;
+
+            li {
+
+                padding-bottom: 30px;
+
+                a {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    text-decoration: none;
+                    color: $white;
+
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+
+    &_contacts {
+        background-color: $black;
+        color: $white;
+        width: 337px;
+
+        a {
+            font-size: 20px;
+            line-height: 130%;
+            text-decoration: none;
+            color: $white;
+            display: block;
+            text-align: center;
+            padding: 21px 40px 35px;
+            border: 1px solid;
+
+            .arrow {
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                margin-left: 60px;
+                margin-top: 20px;
+                padding-left: 2px;
+                background-image: url(../img/Group\ 8\ \(2\).png);
+
+                &:hover {
+                    background-image: url(../img/Group\ 8\ \(1\).png);
+                    background-repeat: no-repeat;
+                    margin-left: 60px;
+                    padding-left: 2px;
+                    margin-top: 20px;
+                }
+            }
+
+            &:hover {
+                display: inline-block;
+                width: 250px;
+                color: $black;
+                background: $white;
+                padding: 21px 40px;
+                text-decoration: none;
+                text-align: center;
+                padding: 20px 40px 5px;
+                border: 1px solid $white;
+
+            }
+        }
+    }
+
+    &_langs {
+        padding-top: 30px;
+        text-align: start;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: start;
+
+            li {
+                margin: 0 7px;
+
+                a {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-transform: uppercase;
+                    color: $white;
+                    text-decoration: none;
+                }
+
+                &.active {
+                    a {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="menu__row">
+        <div class="menu__row" id="main">
             <div class="container">
                 <div class="logo">
                     <a href="#">
@@ -42,6 +42,10 @@
                     <div class="link">
                         <a href="#">Связаться с нами</a>
                     </div>
+                </div>
+
+                <div class="open_mobile_menu">
+                    <a href="#" id="open_menu"></a>
                 </div>
 
             </div>
@@ -80,7 +84,7 @@
         </div>
     </header>
 
-    <section class="communication">
+    <section class="communication" id="about">
         <div class="container">
             <div class="row">
                 <div class="communication__text">
@@ -135,7 +139,7 @@
         </div>
     </section>
 
-    <section class="works">
+    <section class="works" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="works__task">
@@ -153,7 +157,7 @@
                 <div class="works__all">
                     <div class="works__all__treker">
                         <div class=" image img-sm">
-                            <img src="./img/img (2).png" alt="" >
+                        <img src="./img/img (2).png" alt="240">
                         </div>
                         <div class="works__all__treker__link">
                             <a href="#">мобильный трекер</a>
@@ -164,6 +168,9 @@
                         </div>
                     </div>
                     <div class="works__all__today">
+                        <div class=" image img-sm">
+                            <img src="./img/img (2).png" alt="240">
+                        </div>
 
                         <div class="image img-md ">
                             <img src="./img/img.png" alt="" >
@@ -183,6 +190,9 @@
 
                     </div>
                     <div class="works__all__blog">
+                        <div class=" image img-sm">
+                            <img src="./img/img (2).png" alt="240">
+                        </div>
 
                         <div class="image img-md ">
                             <img src="./img/img.png" alt="" >
@@ -239,7 +249,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <div class="row">
                 <div class="blog__news">
@@ -380,7 +390,7 @@
                     </div>
 
 
-                    <div class="company__services">
+                    <div class="company__services" id="services" >
                         <h4>услуги</h4>
                         <ul>
                             <li><a href="#">архитектура приложений</a></li>
@@ -420,6 +430,37 @@
             </div>
         </div>
     </footer>
+
+    <div class="mobile" id="mobile">
+        <div class="mobile_head">
+            <div class="mobile_logo">
+                <a href="#">
+                    <img src="./img/SparkIT.png" alt="SparkIt" title="SparkIt">
+                </a>
+            </div>
+            <div class="mobile_close">
+                <a href="#" id="close_mobile"></a>
+            </div>
+        </div>
+        <div class="mobile_menu">
+            <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#blog">Блог</a></li>
+            </ul>
+        </div>
+        <div class="mobile_contacts">
+            <a href="#">Связаться с нами <span class="arrow"></span></a>
+        </div>
+        <div class="mobile_langs">
+            <ul>
+                <li><a href="#">en</a></li>
+                <li><a href="#">ru</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
