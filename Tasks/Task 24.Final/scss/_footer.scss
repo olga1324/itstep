@@ -24,11 +24,12 @@ footer {
         margin-left: 85px;
     }
 
-        @media(max-width:1279px) {
-            &__logo {
-                display: none;
-            }
+    @media(max-width:1279px) {
+        &__logo {
+            display: none;
         }
+    }
+
     @media(min-width:1920px) {
         &__logo {
             display: none;
@@ -55,6 +56,10 @@ footer {
                     }
                 }
             }
+        }
+
+        @media(max-width:767px) {
+            width: 50%;
         }
 
         @media(min-width:1920px) {
@@ -86,9 +91,12 @@ footer {
             }
         }
 
+        @media(max-width:767px) {
+            width: 50%;
+        }
+
         @media(min-width:1920px) {
             margin-left: -700px;
-
         }
     }
 
@@ -215,6 +223,11 @@ footer {
                     }
                 }
             }
+        }
+
+        @media(max-width:767px) {
+            width: 100%;
+            margin: 420px 10px 5px -416px;
         }
 
         @media(min-width:1920px) {

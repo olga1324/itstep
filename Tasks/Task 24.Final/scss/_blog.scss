@@ -113,16 +113,27 @@
             &__content {
                 display: block;
                 width: 328px;
-
             }
         }
     }
 
-         @media(max-width:1279px) {
-    
-             &__article {
-                 margin: 15px 10px 20px 38px;
-             }
-    
-         }
+    @media(max-width:767px) {
+
+        &__article {
+            flex-direction: column;
+            height: 1168px;
+
+            &__content {
+                display: block;
+                width: 328px;
+            }
+        }
+    }
+
+    @media(max-width:1279px) {
+
+        &__article {
+            margin: 15px 10px 20px 38px;
+        }
+    }
 }

@@ -186,6 +186,12 @@ header {
   float: left;
   flex-direction: column;
 }
+@media (max-width: 767px) {
+  .menu__row .menu__content__text__programm ul .veb:hover a {
+    margin-left: -515px;
+    left: 0;
+  }
+}
 .menu__row .menu__content__text__programm ul li {
   margin-right: 50px;
   display: inline-block;
@@ -224,6 +230,14 @@ header {
   border-left: 1px solid #000000;
   padding-left: 30px;
 }
+@media (max-width: 767px) {
+  .menu__row .menu__content__text__programm ul li:hover ul {
+    left: 0px;
+    top: 50px;
+    position: relative;
+    margin-bottom: 35px;
+  }
+}
 .menu__row .menu__content__text__programm ul li a {
   font-weight: 600;
   font-size: 16px;
@@ -231,6 +245,12 @@ header {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .menu__row .menu__content__text__programm ul li a {
+    margin-left: 0px;
+    left: 0;
+  }
 }
 .menu__row .menu__content__text__programm ul li a:hover {
   color: #f6523c;
@@ -261,6 +281,13 @@ header {
   display: flex;
   padding-bottom: 50px;
   margin-top: 0px;
+}
+@media (max-width: 767px) {
+  .communication__groups {
+    display: flex;
+    flex-direction: column;
+    height: 1037px;
+  }
 }
 .communication__group {
   display: flex;
@@ -401,6 +428,15 @@ header {
 .works__all__treker__content {
   display: none;
 }
+@media (max-width: 767px) {
+  .works__all__treker__content {
+    display: block;
+    width: 410px;
+  }
+  .works__all__treker__link {
+    margin-top: 50px;
+  }
+}
 @media (min-width: 1280px) {
   .works__all__treker__content {
     width: 240px;
@@ -438,6 +474,26 @@ header {
 .works__all__today__content {
   display: none;
 }
+@media (max-width: 767px) {
+  .works__all__today .img-md {
+    display: none;
+  }
+  .works__all__today .img-sm {
+    display: none;
+  }
+  .works__all__today .img-lg {
+    display: block;
+    width: 410px;
+    height: 440px;
+  }
+  .works__all__today__content {
+    display: block;
+    width: 410px;
+  }
+  .works__all__today__link {
+    margin-top: 50px;
+  }
+}
 @media (min-width: 768px) {
   .works__all__today .img-md {
     display: none;
@@ -453,8 +509,15 @@ header {
 }
 @media (min-width: 1280px) {
   .works__all__today .img-md {
+    display: block;
     width: 240px;
     height: 301px;
+  }
+  .works__all__today .img-lg {
+    display: none;
+  }
+  .works__all__today .img-sm {
+    display: none;
   }
   .works__all__today__link {
     margin-top: 235px;
@@ -503,6 +566,23 @@ header {
 .works__all__blog__content {
   display: none;
 }
+@media (max-width: 767px) {
+  .works__all__blog .img-sm {
+    display: none;
+  }
+  .works__all__blog .img-md {
+    display: block;
+    width: 410px;
+    height: 440px;
+  }
+  .works__all__blog__content {
+    display: block;
+    width: 410px;
+  }
+  .works__all__blog__link {
+    margin-top: 50px;
+  }
+}
 @media (min-width: 768px) {
   .works__all__blog .img-md {
     display: none;
@@ -515,8 +595,15 @@ header {
 }
 @media (min-width: 1280px) {
   .works__all__blog .img-md {
+    display: block;
     width: 240px;
     height: 301px;
+  }
+  .works__all__blog .img-lg {
+    display: none;
+  }
+  .works__all__blog .img-sm {
+    display: none;
   }
   .works__all__blog__link {
     margin-top: 235px;
@@ -533,6 +620,12 @@ header {
   }
   .works__all__blog__link {
     margin-top: 235px;
+  }
+}
+@media (max-width: 767px) {
+  .works__all {
+    flex-direction: column;
+    height: 2068px;
   }
 }
 @media (max-width: 1279px) {
@@ -701,6 +794,16 @@ header {
 @media (min-width: 1920px) {
   .blog__article__link {
     width: 430px;
+  }
+  .blog__article__content {
+    display: block;
+    width: 328px;
+  }
+}
+@media (max-width: 767px) {
+  .blog__article {
+    flex-direction: column;
+    height: 1168px;
   }
   .blog__article__content {
     display: block;
@@ -932,6 +1035,11 @@ footer {
 .company__about ul li a:hover {
   color: #f6523c;
 }
+@media (max-width: 767px) {
+  .company__about {
+    width: 50%;
+  }
+}
 @media (min-width: 1920px) {
   .company__about {
     margin-left: 100px;
@@ -955,6 +1063,11 @@ footer {
 }
 .company__services ul li a:hover {
   color: #f6523c;
+}
+@media (max-width: 767px) {
+  .company__services {
+    width: 50%;
+  }
 }
 @media (min-width: 1920px) {
   .company__services {
@@ -1059,6 +1172,12 @@ footer {
 }
 .company__connection__social ul li a.in {
   background-image: url(../img/icon_linkedin.png);
+}
+@media (max-width: 767px) {
+  .company__connection {
+    width: 100%;
+    margin: 420px 10px 5px -416px;
+  }
 }
 @media (min-width: 1920px) {
   .company__connection {

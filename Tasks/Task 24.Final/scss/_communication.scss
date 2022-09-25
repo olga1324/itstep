@@ -23,6 +23,12 @@
         display: flex;
         padding-bottom: 50px;
         margin-top: 0px;
+
+        @media(max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            height: 1037px;
+        }
     }
 
     &__group {
