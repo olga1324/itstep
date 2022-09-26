@@ -1,12 +1,16 @@
 header {
-    background: $white ;
     display: flex;
+    background: $white ;
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
     margin-bottom: 160px;
     margin-top: 100px;
     margin-left: 50px;
+
+    @media(max-width: 1279px) {
+        margin-bottom: 85px;
+    }
 }
 
 .menu__row {
@@ -24,16 +28,19 @@ header {
         text-decoration: none;
         color: $black;
 
-        @media (min-width: 768px) {
-            display: flex;
+        @media (max-width:1279px) {
+            display: none;
         }
 
-        @media (max-width:767px) {
-            display: none;
+        @media (min-width: 1280px) {
+            display: flex;
         }
     }
 
     .menu {
+
+        display: flex;
+        justify-content: space-between;
 
         ul {
             list-style: none;
@@ -41,17 +48,18 @@ header {
             margin-bottom: 0;
             flex-direction: row;
             margin-top: 5px;
+            margin-left: 150px;
 
             li {
                 margin-right: 50px;
-                width: 60px;
+                width: 80px;
 
                 a {
-                    font-weight: 600;
                     font-size: 18px;
                     line-height: 24px;
                     color: $black;
                     text-decoration: none;
+                    margin-left: 15px;
 
                     @media (min-width: 1920px) {
                         font-size: 20px;
@@ -77,13 +85,11 @@ header {
                 margin-top: -10px;
 
                 a {
-                    font-weight: 600;
                     font-size: 16px;
                     line-height: 24px;
                     text-transform: uppercase;
                     color: $black;
                     text-decoration: none;
-
 
                     @media (min-width: 1920px) {
                         font-size: 18px;
@@ -100,6 +106,10 @@ header {
                         color: $red;
                     }
                 }
+            }
+
+            .line {
+                text-decoration: underline;
             }
         }
     }
@@ -130,18 +140,18 @@ header {
     .open_mobile_menu {
         display: flex;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1280px) {
             display: none;
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 1279px) {
             display: block;
+            margin-left: 250px;
         }
 
         a {
             width: 39px;
             height: 39px;
-            background: url("../img/menu.svg") no-repeat;
         }
 
     }
@@ -149,36 +159,52 @@ header {
     .menu__title {
 
         h1 {
-            font-size: 80px;
-            line-height: 96px;
-            width: 800px;
             color: $black;
 
-            @media(min-width: 1920px) {
+            @media(min-width: 768px) {
+                width: 560px;
+                font-size: 40px;
+                line-height: 48px;
+            }
+
+            @media(min-width: 1280px) {
                 width: 1100px;
+                font-size: 80px;
+                line-height: 96px;
             }
         }
     }
 
     .menu__content {
-        width: 100%;
 
         @media(min-width: 1920px) {
-
             background-image: url(../img/график\ \(1\).png);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: 100% 50%;
             height: 546px;
             width: 1725px;
-
         }
 
         p {
-            font-size: 20px;
-            line-height: 32px;
             height: 96px;
             color: $black;
+
+            @media(min-width: 440px) {
+                width: 400px;
+                font-size: 16px;
+                line-height: 25px;
+            }
+
+            @media(min-width: 768px) {
+                width: 700px;
+            }
+
+            @media(min-width: 1280px) {
+                width: 760px;
+                font-size: 20px;
+                line-height: 32px;
+            }
 
             @media(min-width: 1920px) {
                 width: 800px;
