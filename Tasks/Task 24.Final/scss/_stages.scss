@@ -12,43 +12,102 @@
 
         h2 {
             color: $white;
-            font-size: 40px;
-            line-height: 52px;
+           
             text-transform: uppercase;
+
+            @media (min-width: 440px) {
+                    font-size: 24px;
+                    line-height: 31px;
+                }
+            
+                @media (min-width: 1280px) {
+                    font-size: 40px;
+                        line-height: 52px;
+                }
         }
 
         p {
             color: $white;
-            font-size: 24px;
-            line-height: 33px;
+            
+
+            @media (min-width: 440px) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            
+                @media (min-width: 1280px) {
+                    font-size: 24px;
+                        line-height: 33px;
+                }
         }
     }
 
     &__process {
         display: flex;
         flex-direction: column;
-        width: 760px;
-        margin: -170px 10px 20px 450px;
-        margin-bottom: 160px;
+        
+       
+       
+
+        @media (min-width: 440px) {
+                margin-bottom: 80px;
+                width: 400px;
+                padding: 5px 20px;
+            }
+        
+                        @media (min-width: 768px) {
+                            
+                            width: 700px;
+                        }
+            @media (min-width: 1280px) {
+                width: 760px;
+                margin: -170px 10px 0px 450px;
+               
+            }
+
+                        @media (min-width: 1920px) {
+                            width: 960px;
+                            margin: -170px 10px 0px 650px;
+            
+                        }
+
 
         &__level {
             border-top: 1px solid $white;
 
             &__numero {
                 color: $red;
-                font-size: 48px;
-                line-height: 62px;
+                
                 width: 60px;
                 margin-right: 0px;
                 padding-top: 45px;
+
+                @media (min-width: 440px) {
+                        font-size: 36px;
+                        line-height: 133%;
+                    }
+                
+                    @media (min-width: 1280px) {
+                    font-size: 48px;
+                        line-height: 62px;
+                    }
             }
 
             &__text {
                 color: $white;
-                font-size: 20px;
-                line-height: 28px;
+                
                 margin: -60px 10px 35px 85px;
                 text-transform: uppercase;
+
+                @media (min-width: 440px) {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                
+                    @media (min-width: 1280px) {
+                    font-size: 20px;
+                        line-height: 28px;
+                    }
             }
 
             &__border {
@@ -58,11 +117,5 @@
         }
     }
 
-        @media(max-width:1279px) {
-            
-            &__process{
-                margin: 0px 10px 20px 38px;
-            }
-    
-        }
+        
 }

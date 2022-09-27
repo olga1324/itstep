@@ -538,8 +538,10 @@ header {
 .works__all {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: -270px 10px 160px 440px;
 }
+
 .works__all__treker__link a {
   text-decoration: none;
   text-transform: uppercase;
@@ -557,10 +559,14 @@ header {
   .works__all__treker {
     width: 400px;
   }
+  .works__all__treker__content{
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 768px) {
   .works__all__treker {
-    width: 150px;
+    width: 220px;
+   
     margin-bottom: 85px;
   }
 }
@@ -592,7 +598,7 @@ header {
     background-size: 240p 301px;
   }
   .works__all__treker__link {
-    margin-top: 235px;
+    margin-top: 35px;
   }
 }
 @media (min-width: 1920px) {
@@ -601,7 +607,7 @@ header {
     width: 410px;
   }
   .works__all__treker__link {
-    margin-top: 235px;
+    margin-top: 35px;
   }
 }
 .works__all__today {
@@ -617,10 +623,13 @@ header {
   .works__all__today {
     width: 400px;
   }
+  .works__all__today__content{
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 768px) {
   .works__all__today {
-    width: 150px;
+    width: 220px;
     margin-bottom: 85px;
   }
 }
@@ -661,6 +670,7 @@ header {
   }
   .works__all__today .img-sm {
     display: block;
+   
   }
 }
 @media (min-width: 1280px) {
@@ -674,7 +684,8 @@ header {
     display: none;
   }
   .works__all__today__link {
-    margin-top: 235px;
+    margin-top: 35px;
+    
   }
 }
 @media (min-width: 1920px) {
@@ -688,7 +699,7 @@ header {
     display: block;
   }
   .works__all__today__link {
-    margin-top: 235px;
+    margin-top: 35px;
   }
 }
 .works__all__today__link a {
@@ -717,12 +728,17 @@ header {
 .works__all__blog__content {
   display: none;
 }
+ @media (min-width: 440px) {
+  .works__all__blog__content{
+   width: 400px;}
+ }
 @media (max-width: 767px) {
   .works__all__blog .img-sm {
     display: none;
   }
   .works__all__blog .img-md {
     display: block;
+    width: 220px;
   }
   .works__all__blog__content {
     display: block;
@@ -737,6 +753,7 @@ header {
   }
   .works__all__blog .img-sm {
     display: block;
+    width: 220px;
   }
 }
 @media (min-width: 1280px) {
@@ -750,7 +767,7 @@ header {
     display: none;
   }
   .works__all__blog__link {
-    margin-top: 235px;
+    margin-top: 35px;
   }
 }
 @media (min-width: 1920px) {
@@ -758,7 +775,7 @@ header {
     display: block;
   }
   .works__all__blog__link {
-    margin-top: 235px;
+    margin-top: 35px;
   }
 }
 @media (max-width: 767px) {
@@ -769,7 +786,7 @@ header {
 }
 @media (max-width: 1279px) {
   .works__all {
-    margin: 60px 10px 20px 38px;
+    margin: 60px 20px 80px 38px;
   }
 }
 @media (min-width: 1280px) {
@@ -804,7 +821,6 @@ header {
 .stages__process {
   display: flex;
   flex-direction: column;
-  width: 760px;
   margin: -170px 10px 20px 450px;
   margin-bottom: 160px;
 }
@@ -903,14 +919,23 @@ header {
 .blog__article {
   display: flex;
   flex-direction: row;
-  height: 453px;
   width: 250px;
   margin: -300px 20px 160px 470px;
 }
+.blog__article__all {
+   background-color: #ffffff;
+   margin-left: 30px;
+ }
+
+ @media (min-width: 440px) {
+  .blog__article__all {
+     width: 400px;
+   }
+ }
 .blog__article__image {
   height: 190px;
   width: 190px;
-  margin-left: 70px;
+  margin-left: 30px;
 }
 .blog__article__link {
   margin-top: 60px;
@@ -946,7 +971,7 @@ header {
   }
   .blog__article__content {
     display: block;
-    width: 328px;
+    width: 400px;
   }
 }
 @media (max-width: 1279px) {
@@ -966,6 +991,7 @@ header {
   height: 255px;
   margin-left: 50px;
   margin-top: 150px;
+padding-top: 5px;
 }
 .contact__info__title h2 {
   font-size: 40px;
@@ -979,7 +1005,9 @@ header {
   width: 30px;
   height: 30px;
   display: inline-block;
-  padding-left: 2px;
+  padding-left: 10px;
+  
+  background-repeat: no-repeat;
   background-image: url(../img/bi_phone\ \(1\).png);
 }
 .contact__info__telephone a {
@@ -990,6 +1018,8 @@ header {
   color: #000000;
   text-transform: uppercase;
   margin-right: 40px;
+  
+  
 }
 .contact__info__telephone a:hover {
   color: #f6523c;
@@ -1001,7 +1031,8 @@ header {
   width: 30px;
   height: 30px;
   display: inline-block;
-  padding-left: 2px;
+  padding-left: 10px;
+  background-repeat: no-repeat;
   background-image: url(../img/bi_pin-map.png);
 }
 .contact__info__adress p {
@@ -1018,7 +1049,8 @@ header {
   width: 30px;
   height: 30px;
   display: inline-block;
-  padding-left: 2px;
+  padding-left: 10px;
+  background-repeat: no-repeat;
   background-image: url(../img/eva_email-outline.png);
 }
 .contact__info__email a {
@@ -1133,6 +1165,8 @@ footer {
   margin-top: 150px;
   margin-bottom: 160px;
 }
+
+
 .company__logo {
   margin-top: 150px;
   margin-left: 50px;
@@ -1210,7 +1244,7 @@ footer {
 }
 @media (min-width: 1920px) {
   .company__services {
-    margin-left: -700px;
+    margin-left: -200px;
   }
 }
 .company__connection h4 {
@@ -1220,8 +1254,9 @@ footer {
   width: 30px;
   height: 30px;
   display: inline-block;
-  padding-left: 2px;
-  padding-bottom: 18px;
+  padding-left: 10px;
+  
+  padding-top: 10px;
   background-repeat: no-repeat;
   background-image: url(../img/bi_phone.png);
 }
@@ -1234,6 +1269,7 @@ footer {
   text-transform: uppercase;
   margin-right: 40px;
   margin-top: 10px;
+ height: 30px;
 }
 .company__connection__telephone a:hover {
   color: #f6523c;
@@ -1245,9 +1281,9 @@ footer {
   width: 30px;
   height: 30px;
   display: inline-block;
-  padding-left: 2px;
+  padding-left: 10px;
   background-repeat: no-repeat;
-  padding-bottom: 18px;
+ 
   background-image: url(..//img/Group\ \(1\).png);
 }
 .company__connection__adress p {
@@ -1266,8 +1302,8 @@ footer {
   height: 30px;
   background-repeat: no-repeat;
   display: inline-block;
-  padding-left: 2px;
-  padding-bottom: 18px;
+  padding-left: 10px;
+  
   background-image: url(../img/Vector\ 2.png);
 }
 .company__connection__email a {

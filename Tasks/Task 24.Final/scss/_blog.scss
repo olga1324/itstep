@@ -73,9 +73,37 @@
     &__article {
         display: flex;
         flex-direction: row;
-        height: 453px;
+       
         width: 250px;
         margin: -300px 20px 160px 470px;
+        background: $white;
+
+        @media (min-width: 440px) {
+                
+                width: 400px;
+               
+            }
+        
+            @media (min-width: 768px) {
+        
+                width: 700px;
+            }
+        
+            @media (min-width: 1280px) {
+                width: 790px;
+
+        
+            }
+        
+            @media (min-width: 1920px) {
+                width: 960px;
+               
+        
+            }
+
+            &__all{
+                background-color: $white;
+            }
 
         &__image {
             height: 190px;
@@ -87,6 +115,7 @@
             margin-top: 60px;
             margin-bottom: 18px;
             text-align: start;
+            padding-left: 20px;
 
             a {
                 text-decoration: none;

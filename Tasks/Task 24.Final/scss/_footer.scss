@@ -9,6 +9,8 @@ footer {
     margin-top: 150px;
     margin-bottom: 160px;
 
+    
+
     &__logo {
         margin-top: 150px;
         margin-left: 50px;
@@ -96,7 +98,7 @@ footer {
         }
 
         @media(min-width:1920px) {
-            margin-left: -700px;
+            margin-left: -200px;
         }
     }
 
@@ -111,8 +113,8 @@ footer {
                 width: 30px;
                 height: 30px;
                 display: inline-block;
-                padding-left: 2px;
-                padding-bottom: 18px;
+                padding-left: 10px;
+                
                 background-repeat: no-repeat;
                 background-image: url(../img/bi_phone.png);
             }
@@ -127,6 +129,7 @@ footer {
                 margin-right: 40px;
                 margin-top: 10px;
 
+
                 &:hover {
                     color: $red;
                 }
@@ -140,9 +143,9 @@ footer {
                 width: 30px;
                 height: 30px;
                 display: inline-block;
-                padding-left: 2px;
+                padding-left: 10px;
                 background-repeat: no-repeat;
-                padding-bottom: 18px;
+                
                 background-image: url(..//img/Group\ \(1\).png);
             }
 
@@ -164,8 +167,8 @@ footer {
                 height: 30px;
                 background-repeat: no-repeat;
                 display: inline-block;
-                padding-left: 2px;
-                padding-bottom: 18px;
+                padding-left: 10px;
+                
                 background-image: url(../img/Vector\ 2.png);
             }
 

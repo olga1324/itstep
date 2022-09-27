@@ -120,6 +120,7 @@
     &__all {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         margin: -270px 10px 160px 440px;
 
         @media (min-width: 440px) {
@@ -141,6 +142,9 @@
         }
 
         &__treker {
+
+            padding-right:20px ;
+
             &__link {
                 a {
                     text-decoration: none;
@@ -164,7 +168,8 @@
             }
 
             @media (min-width: 768px) {
-                width: 150px;
+                width: 220px;
+                
                 margin-bottom: 85px;
             }
 
@@ -182,10 +187,11 @@
 
             &__content {
                 display: block;
+                        margin-bottom: 50px;
             }
 
             &__link {
-                margin-top: 50px;
+                margin-top: 35px;
             }
         }
 
@@ -196,7 +202,7 @@
             }
 
             &__link {
-                margin-top: 235px;
+                margin-top: 35px;
             }
         }
 
@@ -229,7 +235,7 @@
         }
 
         @media (min-width: 768px) {
-            width: 150px;
+            width: 220px;
             margin-bottom: 85px;
         }
 
@@ -253,14 +259,17 @@
 
             .img-lg {
                 display: block;
+                
             }
 
             &__content {
                 display: block;
+                margin-bottom: 50px;
+                }
             }
 
             &__link {
-                margin-top: 50px;
+                margin-top: 35px;
             }
         }
 
@@ -275,6 +284,8 @@
 
             .img-sm {
                 display: block;
+                width: 220px;
+                height: 301px;
             }
         }
 
@@ -355,7 +366,7 @@
         }
 
         @media (min-width: 768px) {
-            width: 150px;
+            width: 220px;
             margin-bottom: 85px;
         }
 
@@ -382,7 +393,7 @@
             }
 
             &__link {
-                margin-top: 50px;
+                margin-top: 35px;
             }
         }
 
@@ -426,7 +437,7 @@
             }
         }
     }
-}
+
 
 @media(max-width:767px) {
 
