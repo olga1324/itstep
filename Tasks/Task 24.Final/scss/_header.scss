@@ -141,11 +141,7 @@ header {
     .open_mobile_menu {
         display: flex;
 
-        @media (min-width: 1280px) {
-            display: none;
-        }
-
-        @media (max-width: 1279px) {
+        @media (min-width: 440px) {
             display: block;
             margin-left: 250px;
         }
@@ -154,6 +150,10 @@ header {
             width: 39px;
             height: 39px;
         }
+
+                 @media (min-width: 1280px) {
+                     display: none;
+                 }
 
     }
 
