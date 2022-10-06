@@ -11,7 +11,6 @@
         margin-left: 50px;
         margin-top: 150px;
 
-
         &__title {
 
             h2 {
@@ -32,7 +31,6 @@
                 height: 30px;
                 display: inline-block;
                 padding-left: 10px;
-
                 background-repeat: no-repeat;
                 background-image: url(../img/bi_phone\ \(1\).png);
             }
@@ -70,7 +68,6 @@
                 line-height: 140%;
                 text-decoration: none;
                 color: $black;
-
             }
         }
 
@@ -82,7 +79,6 @@
                 height: 30px;
                 display: inline-block;
                 padding-left: 10px;
-
                 background-repeat: no-repeat;
                 background-image: url(../img/eva_email-outline.png);
             }
@@ -105,11 +101,7 @@
         display: flex;
         flex-direction: row;
         height: 413px;
-        margin: -250px 10px 160px 570px;
-        border: 1px solid $gray;
-        padding: 70px 100px;
-        width: 430px;
-
+       
         .mb-3 {
             display: flex;
 
@@ -130,7 +122,6 @@
                 margin-top: 40px;
                 width: 16px;
                 height: 16px;
-
             }
 
             input:invalid :not(:placeholder-shown) {
@@ -152,7 +143,6 @@
                 display: block;
                 margin-top: 3px;
                 display: none;
-
             }
 
             p {
@@ -192,7 +182,7 @@
         }
 
         @media (min-width: 1920px) {
-
+    margin: -250px 10px 0px 670px;
             width: 860px;
             height: 480px;
 
@@ -224,11 +214,33 @@
         }
     }
 
-    @media(max-width:1279px) {
+    @media(min-width:440px) {
 
         &__form {
-            margin: 110px 10px 20px 38px;
+            width: 400px;
+            border: none;
+            margin: 70px px 10px 20px 1px;
+            padding: 0px 40px;
         }
+    }
 
+}
+
+@media(min-width:768px) {
+
+    &__form {
+        margin: 110px 10px 20px 38px;
+        border: 1px solid $gray;
+        width: 430px;
+        padding: 70px 100px;
+    }
+}
+
+@media(min-width:1280px) {
+
+    &__form {
+        margin: -250px 10px 0px 570px;
+        padding: 70px 100px;
+        height: 413px;
     }
 }

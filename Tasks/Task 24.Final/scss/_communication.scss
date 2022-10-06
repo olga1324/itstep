@@ -7,7 +7,7 @@
 
     &__text {
         color: $white;
-        margin: 150px 60px 20px;
+        margin: 150px 80px 20px;
 
         @media (min-width: 440px) {
             font-size: 24px;
@@ -40,6 +40,7 @@
         display: flex;
         padding-bottom: 50px;
         margin-top: 0px;
+        margin-left: 60px;
 
         @media(max-width: 767px) {
             display: flex;
