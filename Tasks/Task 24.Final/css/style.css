@@ -1147,9 +1147,29 @@ header {
   height: 49px;
 }
 .contact__form .mb-3 input[type=checkbox] {
-  margin-top: 40px;
-  width: 16px;
-  height: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+  margin-top: 25px;
+}
+.contact__form .mb-3 input[type=checkbox]:checked{
+  background-color: #f6523c;
+  border: none;
+  margin-top: 28px;
+    width: 20px;
+    height: 20px;
+    padding: 0 3px;
+}
+.contact__form .mb-3 input[type=checkbox]:checked::before{
+  content: "\2713";
+  color: #ffffff;
+  padding: initial;
+  font-weight:bold;
+  
 }
 .contact__form .mb-3 input:invalid :not(:-moz-placeholder-shown) {
   border-bottom: 1px solid red;
@@ -1189,8 +1209,8 @@ header {
 .contact__form .mb-3 p {
   font-size: 14px;
   line-height: 18px;
-  margin-left: 35px;
-  margin-top: -20px;
+  margin-left: 48px;
+  margin-top: -27px;
 }
 .contact__form .mb-3 .red {
   color: #f6523c;
