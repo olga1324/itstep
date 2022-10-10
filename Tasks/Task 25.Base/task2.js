@@ -34,3 +34,5 @@ var c = (number - (b * 10) - a) / 100;
 console.log(c);
 var sum = a + b + c;
 console.log(sum);
+
+//число в обратном порядке

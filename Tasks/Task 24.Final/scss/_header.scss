@@ -14,7 +14,6 @@ header {
 }
 
 .menu__row {
-    padding-top: 50px;
 
     .container {
         display: flex;
@@ -38,7 +37,6 @@ header {
     }
 
     .menu {
-
         display: flex;
         justify-content: space-between;
 
@@ -143,7 +141,7 @@ header {
 
         @media (min-width: 440px) {
             display: block;
-            margin-left: 250px;
+            margin-right: 60px;
         }
 
         a {
@@ -151,10 +149,9 @@ header {
             height: 39px;
         }
 
-                 @media (min-width: 1280px) {
-                     display: none;
-                 }
-
+        @media (min-width: 1280px) {
+            display: none;
+        }
     }
 
     .menu__title {
@@ -188,7 +185,6 @@ header {
         }
 
         p {
-            height: 96px;
             color: $black;
 
             @media(min-width: 440px) {
@@ -215,7 +211,7 @@ header {
         &__text {
             display: flex;
             flex-direction: row;
-            padding-top: 60px;
+            padding-top: 40px;
 
             &__programm {
                 ul {

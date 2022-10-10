@@ -25,10 +25,6 @@ header {
     margin-bottom: 85px;
   }
 }
-
-.menu__row {
-  padding-top: 50px;
-}
 .menu__row .container {
   display: flex;
   justify-content: space-between;
@@ -140,7 +136,7 @@ header {
 @media (min-width: 440px) {
   .menu__row .open_mobile_menu {
     display: block;
-    margin-left: 250px;
+    margin-right: 60px;
   }
 }
 .menu__row .open_mobile_menu a {
@@ -180,7 +176,7 @@ header {
   }
 }
 .menu__row .menu__content p {
-  height: 96px;
+ 
   color: #000000;
 }
 @media (min-width: 440px) {
@@ -210,7 +206,7 @@ header {
 .menu__row .menu__content__text {
   display: flex;
   flex-direction: row;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 .menu__row .menu__content__text__programm ul {
   list-style: none;
@@ -335,7 +331,7 @@ header {
   display: flex;
   padding-bottom: 50px;
   margin-top: 0px;
-  margin-left: 60px;
+  margin-left: 25px;
 }
 @media (max-width: 767px) {
   .communication__groups {
@@ -350,7 +346,7 @@ header {
   justify-content: space-between;
   margin-right: 11px;
   width: 460px;
-  padding: 50px 30px 39px;
+  padding: 50px 50px 20px;
 }
 @media (min-width: 440px) {
   .communication__group {
@@ -839,7 +835,7 @@ header {
   .stages__process {
     margin-bottom: 80px;
     width: 400px;
-    padding: 5px 20px;
+    padding: 50px 20px;
   }
 }
 @media (min-width: 768px) {
@@ -1132,13 +1128,13 @@ header {
   padding: 70px 100px;
   width: 430px;
 }
-.contact__form .mb-3 {
+.contact__form__table {
   display: flex;
 }
-.contact__form .mb-3 input {
+.contact__form__table input {
   border: none;
 }
-.contact__form .mb-3 input[type=text] {
+.contact__form__table input[type=text] {
   border-bottom: 1px solid #dfdfdf;
   font-size: 16px;
   line-height: 20px;
@@ -1146,7 +1142,7 @@ header {
   width: 418px;
   height: 49px;
 }
-.contact__form .mb-3 input[type=checkbox] {
+.contact__form__table input[type=checkbox] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1156,7 +1152,7 @@ header {
   border: 1px solid #dfdfdf;
   margin-top: 25px;
 }
-.contact__form .mb-3 input[type=checkbox]:checked{
+.contact__form__table input[type=checkbox]:checked{
   background-color: #f6523c;
   border: none;
   margin-top: 28px;
@@ -1164,41 +1160,41 @@ header {
     height: 20px;
     padding: 0 3px;
 }
-.contact__form .mb-3 input[type=checkbox]:checked::before{
+.contact__form__table input[type=checkbox]:checked::before{
   content: "\2713";
   color: #ffffff;
   padding: initial;
   font-weight:bold;
-  
 }
-.contact__form .mb-3 input:invalid :not(:-moz-placeholder-shown) {
+
+.contact__form__table input:invalid :not(:-moz-placeholder-shown) {
   border-bottom: 1px solid red;
 }
-.contact__form .mb-3 input:invalid :not(:-ms-input-placeholder) {
+.contact__form__table input:invalid :not(:-ms-input-placeholder) {
   border-bottom: 1px solid red;
 }
-.contact__form .mb-3 input:invalid :not(:placeholder-shown) {
+.contact__form__table input:invalid :not(:placeholder-shown) {
   border-bottom: 1px solid red;
 }
-.contact__form .mb-3 input:invalid :not(:-moz-placeholder-shown) + .form__error {
+.contact__form__table input:invalid :not(:-moz-placeholder-shown) + .form__error {
   display: block;
 }
-.contact__form .mb-3 input:invalid :not(:-ms-input-placeholder) + .form__error {
+.contact__form__table input:invalid :not(:-ms-input-placeholder) + .form__error {
   display: block;
 }
-.contact__form .mb-3 input:invalid :not(:placeholder-shown) + .form__error {
+.contact__form__table input:invalid :not(:placeholder-shown) + .form__error {
   display: block;
 }
-.contact__form .mb-3 input:valid :not(:-moz-placeholder-shown) {
+.contact__form__table input:valid :not(:-moz-placeholder-shown) {
   border-bottom: 1px solid black;
 }
-.contact__form .mb-3 input:valid :not(:-ms-input-placeholder) {
+.contact__form__table input:valid :not(:-ms-input-placeholder) {
   border-bottom: 1px solid black;
 }
-.contact__form .mb-3 input:valid :not(:placeholder-shown) {
+.contact__form__table input:valid :not(:placeholder-shown) {
   border-bottom: 1px solid black;
 }
-.contact__form .mb-3 .form__error {
+.contact__form__table .form__error {
   color: red;
   text-align: center;
   font-size: 12px;
@@ -1206,16 +1202,16 @@ header {
   margin-top: 3px;
   display: none;
 }
-.contact__form .mb-3 p {
+.contact__form__table p {
   font-size: 14px;
   line-height: 18px;
   margin-left: 48px;
   margin-top: -27px;
 }
-.contact__form .mb-3 .red {
+.contact__form__table .red {
   color: #f6523c;
 }
-.contact__form .mb-3 .button {
+.contact__form__table .button {
   display: flex;
   background: #f6523c;
   justify-content: center;
@@ -1226,7 +1222,7 @@ header {
   line-height: 25px;
   padding: 16px 40px;
 }
-.contact__form .mb-3 .button:hover {
+.contact__form__table .button:hover {
   background-color: #ffffff;
   color: #000000;
   border: 1px solid;
@@ -1241,7 +1237,7 @@ header {
     width: 860px;
     height: 480px;
   }
-  .contact__form .mb-3 {
+  .contact__form__table {
     width: 50%;
     float: left;
     margin-bottom: 40px;
@@ -1268,7 +1264,7 @@ header {
     width: 400px;
     border: none;
     margin: 70px px 10px 20px 1px;
-    padding: 0px 40px;
+    padding: 80px 40px 0px;
   }
 }
 @media (min-width: 768px) {
@@ -1304,7 +1300,17 @@ footer {
   justify-content: space-between;
   flex-direction: row;
   margin-top: 150px;
-  margin-bottom: 160px;
+  
+}
+@media(min-width:440px) {
+  .company {
+    margin-bottom: 85px;
+  }
+}
+@media(min-width:1280px) {
+  .company {
+    margin-bottom: 140px;
+  }
 }
 .company__logo {
   margin-top: 150px;
@@ -1317,7 +1323,22 @@ footer {
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 150px;
-  margin-left: 85px;
+  margin-left: 56px;
+}
+@media(min-width:440px) {
+  .company h4 {
+    margin-top: 56px;
+  }
+}
+@media(min-width:1280px) {
+  .company h4 {
+    margin-left: 60px;
+  }
+}
+@media(min-width:1280px) {
+  .company h4 {
+    margin-top: 150px;
+  }
 }
 @media (max-width: 1279px) {
   .company__logo {
@@ -1332,7 +1353,12 @@ footer {
 .company__about ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
-  margin-left: 85px;
+  margin-left: 56px;
+}
+@media(min-width:1280px) {
+  .company__about ul {
+    margin-left: 60px;
+  }
 }
 .company__about ul li {
   padding-bottom: 35px;
@@ -1360,7 +1386,12 @@ footer {
 .company__services ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
-  margin-left: 85px;
+  margin-left: 56px;
+}
+@media(min-width:1280px) {
+  .company__services ul{
+  margin-left: 60px;
+  }
 }
 .company__services ul li {
   padding-bottom: 32px;
@@ -1485,7 +1516,7 @@ footer {
 @media (max-width: 767px) {
   .company__connection {
     width: 100%;
-    margin: 420px 10px 5px -416px;
+    margin: 447px 10px 5px -416px;
   }
 }
 @media (min-width: 1920px) {

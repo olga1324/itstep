@@ -1,4 +1,4 @@
-.contact {
+м .contact {
     background: $white;
     display: flex;
     flex-wrap: nowrap;
@@ -102,7 +102,7 @@
         flex-direction: row;
         height: 413px;
 
-        .mb-3 {
+        &__table {
             display: flex;
 
             input {
@@ -144,7 +144,6 @@
                     }
                 }
             }
-
 
             input:invalid :not(:placeholder-shown) {
                 border-bottom: 1px solid red;
@@ -208,7 +207,7 @@
             width: 860px;
             height: 480px;
 
-            .mb-3 {
+            &__table {
                 width: 50%;
                 float: left;
                 margin-bottom: 40px;
@@ -242,7 +241,7 @@
             width: 400px;
             border: none;
             margin: 70px px 10px 20px 1px;
-            padding: 0px 40px;
+            padding: 80px 40px 0px;
         }
     }
 
