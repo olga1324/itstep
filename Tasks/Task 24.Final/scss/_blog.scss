@@ -73,7 +73,6 @@
     &__article {
         display: flex;
         flex-direction: row;
-
         width: 250px;
         margin: -300px 20px 160px 470px;
         background: $white;
@@ -101,7 +100,7 @@
         &__image {
             height: 190px;
             width: 190px;
-            margin-left: 70px;
+            margin-left: 40px;
         }
 
         &__link {

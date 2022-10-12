@@ -8,6 +8,7 @@ header {
     margin-top: 100px;
     margin-left: 50px;
 
+
     @media(max-width: 1279px) {
         margin-bottom: 85px;
     }
@@ -50,7 +51,6 @@ header {
 
             li {
                 margin-right: 50px;
-                width: 80px;
 
                 a {
                     font-size: 18px;
@@ -191,6 +191,7 @@ header {
                 width: 400px;
                 font-size: 16px;
                 line-height: 25px;
+                margin-left: -15px;
             }
 
             @media(min-width: 768px) {

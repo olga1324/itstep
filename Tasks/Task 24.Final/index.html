@@ -286,9 +286,10 @@
                 </div>
                 <div class="contact__form">
                     <form action="">
-                        <div class="contact__form__table">
-                            <input type="text" class="form-control" id="name" placeholder="имя" required>
-                            <span class="form__error">Заполните это поле</span>
+                        <div class="contact__form__table__error">
+                            <input class="contact__form__table__error" type="text" name="name" id="name" value=""
+                                placeholder="Имя">
+                            <div class="contact__form__table__text__error">Пожалуйста введите ваше имя</div>
                         </div>
                         <div class="contact__form__table">
                             <input type="text" class="form-control" id="phone" placeholder="номер телефона" required>

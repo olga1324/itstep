@@ -8,6 +8,14 @@ footer {
     flex-direction: row;
     margin-top: 150px;
 
+    .company__connection {
+        margin: 5px -22px 15px 10px;
+
+        @media(min-width:1280px) {
+            margin: 5px 50px 15px 10px;
+        }
+    }
+
     @media(min-width:440px) {
         margin-bottom: 85px;
     }
@@ -159,7 +167,7 @@ footer {
             }
 
             &__adress {
-                width: 341px;
+                width: 300px;
 
                 .map {
                     width: 30px;
@@ -181,7 +189,7 @@ footer {
             }
 
             &__email {
-                width: 341px;
+                width: 300px;
 
                 .letter {
                     width: 30px;
@@ -215,7 +223,7 @@ footer {
 
                     li {
 
-                        padding: 0 24px;
+                        padding: 0 16px;
                         display: flex;
                         height: 90px;
                         align-items: center;

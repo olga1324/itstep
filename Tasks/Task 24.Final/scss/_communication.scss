@@ -5,6 +5,12 @@
     flex-wrap: nowrap;
     flex-direction: row;
 
+    @media(min-width:1920px) {
+        .container {
+            margin: 10px 5px 15px 146px;
+        }
+    }
+
     &__text {
         color: $white;
         margin: 150px 80px 20px;
@@ -14,6 +20,7 @@
             line-height: 38px;
             width: 400px;
             margin-top: 80px;
+            margin-left: 20px;
         }
 
         @media (min-width: 768px) {
@@ -55,10 +62,11 @@
         justify-content: space-between;
         margin-right: 11px;
         width: 460px;
-        padding: 50px 50px 20px;
+        padding: 50px 30px 20px;
 
         @media (min-width: 440px) {
             width: 400px;
+            padding-left: 10px;
         }
 
         @media (min-width: 768px) {

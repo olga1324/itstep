@@ -60,7 +60,6 @@ header {
 }
 .menu__row .menu ul li {
   margin-right: 50px;
-  width: 80px;
 }
 .menu__row .menu ul li a {
   font-size: 18px;
@@ -184,6 +183,7 @@ header {
     width: 400px;
     font-size: 16px;
     line-height: 25px;
+    margin-left:-15px;
   }
 }
 @media (min-width: 768px) {
@@ -293,6 +293,11 @@ header {
   flex-wrap: nowrap;
   flex-direction: row;
 }
+ @media(min-width:1920px) {
+   .container {
+     margin: 10px 5px 15px 146px;
+   }
+ }
 .communication__text {
   color: #ffffff;
   margin: 150px 80px 20px;
@@ -303,6 +308,7 @@ header {
     line-height: 38px;
     width: 400px;
     margin-top: 80px;
+    margin-left: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -333,6 +339,12 @@ header {
   margin-top: 0px;
   margin-left: 25px;
 }
+@media(max-width:767px){
+  .communication__groups{
+    margin-left: 20px;
+    width: 400px;
+  }
+}
 @media (max-width: 767px) {
   .communication__groups {
     display: flex;
@@ -346,11 +358,12 @@ header {
   justify-content: space-between;
   margin-right: 11px;
   width: 460px;
-  padding: 50px 50px 20px;
+  padding: 50px 30px 20px;
 }
 @media (min-width: 440px) {
   .communication__group {
     width: 400px;
+    padding-left: 10px;
   }
 }
 @media (min-width: 768px) {
@@ -546,6 +559,7 @@ header {
 @media (min-width: 768px) {
   .works__all {
     flex-direction: row;
+    margin: 0px 0px 70px 25px;
   }
 }
 @media (min-width: 1280px) {
@@ -571,9 +585,7 @@ header {
   background-size: cover;
   background-position: 50% 50%;
 }
-.works__all__treker {
-  padding-right: 20px;
-}
+
 .works__all__treker__link a {
   text-decoration: none;
   text-transform: uppercase;
@@ -628,7 +640,7 @@ header {
   }
 }
 .works__all__today {
-  padding-right: 20px;
+  padding-left: 20px;
 }
 .works__all__today__link a {
   text-decoration: none;
@@ -636,7 +648,7 @@ header {
   color: #000000;
   font-size: 24px;
   line-height: 36px;
-  margin: 50px 70px 85px 30px;
+  margin: 50px 50px 85px 30px;
 }
 .works__all__today__link a:hover {
   color: #f6523c;
@@ -712,7 +724,7 @@ header {
   }
 }
 .works__all__blog {
-  padding-right: 20px;
+  padding-left:0px;
 }
 .works__all__blog__link a {
   text-decoration: none;
@@ -945,7 +957,7 @@ header {
   padding-left: 2px;
   background-image: url(../img/Group\ 8\ \(1\).png);
 }
-.blog__news__link a .arrow:hover {
+.blog__news__link a .arrow:hover{
   background-image: url(../img/Group\ 8\ \(2\).png);
   background-repeat: no-repeat;
   margin-left: 60px;
@@ -995,7 +1007,7 @@ header {
 .blog__article__image {
   height: 190px;
   width: 190px;
-  margin-left: 70px;
+  margin-left: 40px;
 }
 .blog__article__link {
   margin-top: 60px;
@@ -1142,6 +1154,17 @@ header {
   width: 418px;
   height: 49px;
 }
+.contact__form__table__error input{
+  border: none;
+}
+.contact__form__table__error input[type=text]{
+  border-bottom: 1px solid #f6523c;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 418px;
+  height: 48px;
+}
 .contact__form__table input[type=checkbox] {
   appearance: none;
   -webkit-appearance: none;
@@ -1152,13 +1175,14 @@ header {
   border: 1px solid #dfdfdf;
   margin-top: 25px;
 }
+
 .contact__form__table input[type=checkbox]:checked{
   background-color: #f6523c;
   border: none;
   margin-top: 28px;
-    width: 20px;
-    height: 20px;
-    padding: 0 3px;
+  width: 20px;
+  height: 20px;
+  padding: 0 3px;
 }
 .contact__form__table input[type=checkbox]:checked::before{
   content: "\2713";
@@ -1201,6 +1225,21 @@ header {
   display: block;
   margin-top: 3px;
   display: none;
+}
+
+.contact__form__table__text__error{
+color: #f6523c;
+font-size: 12px;
+margin: 5px -15px 0px 3px;
+}
+@media(min-width:1920px){
+  .contact__form__table__error{
+      width: 50%;
+      float: left;
+    }
+  .contact__form__table__text__error{
+    width: 50%;
+  } 
 }
 .contact__form__table p {
   font-size: 14px;
@@ -1417,6 +1456,14 @@ footer {
     margin-left: -200px;
   }
 }
+.company__connection{
+  margin: 5px -22px 15px 10px;
+}
+@media (min-width: 1280px) {
+  .company__connection{
+    margin: 5px 50px 15px 10px;
+  }
+}
 .company__connection h4 {
   margin-left: 0px;
 }
@@ -1442,7 +1489,7 @@ footer {
   color: #f6523c;
 }
 .company__connection__adress {
-  width: 341px;
+  width: 300px;
 }
 .company__connection__adress .map {
   width: 30px;
@@ -1461,7 +1508,7 @@ footer {
   margin-top: 10px;
 }
 .company__connection__email {
-  width: 341px;
+  width: 300px;
 }
 .company__connection__email .letter {
   width: 30px;
@@ -1489,7 +1536,7 @@ footer {
   padding: 0;
 }
 .company__connection__social ul li {
-  padding: 0 24px;
+  padding: 0 16px;
   display: flex;
   height: 90px;
   align-items: center;
