@@ -13,3 +13,21 @@ for(let i = 1; i <= n; i++){
         }
     }  
  }
+
+ //or
+
+N = 18;
+var isPrime = true; // булевская переменная, которая отвечает за критерий простоты числа
+
+for (let i = 2; i < N; i++) {
+    if (N % i == 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (isPrime) {
+    console.log(N, " - Простое число");
+} else {
+    console.log(N, " - Составное число");
+}

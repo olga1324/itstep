@@ -3,15 +3,15 @@
 превысит S тысяч рублей, если за это время он 
 не будет отдавать долг.*/
 
-var m = 5000;
-var s = 8000;
-var y = 1;
-var pr = 20;
+var M = 1000;
+var S = 100000;
+var years = 0;
 
-for(let y = 1; m >= s; y++ ){
-    s = (m + (m * pr / 100));
-    
+do {
 
-}
-console.log(m, s, y);
+    M *= 1.2;
+    years++;
 
+} while (M <= S);
+
+console.log(years);

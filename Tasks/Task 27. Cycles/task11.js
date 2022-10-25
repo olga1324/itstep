@@ -17,5 +17,19 @@ function fib(n) {
 
 console.log( fib(28) );
 
+//or
+var prevprev = 1, // предпредыдущее
+    prev = 1, // предыдущее
+    current; //текущее число
+N = 15; // номер числа Фибоначчи
 
+for (let i = 3; i <= N; i++) { // начинаем считать с 3 номера последовательности
+
+    current = prev + prevprev; // расчет текущего числа с номером i
+
+    prevprev = prev;
+    prev = current;
+}
+
+console.log(current);
 
