@@ -6,7 +6,7 @@ while (i <= 100) {
     i += 2;
 }
 
-console.log(sum, i);
+console.log(sum, i); // сумма четных чисел, последнее число i=102
 
 //task 2
 sum = 0, i = 2;
@@ -16,14 +16,16 @@ do {
     i += 2;
 } while (i <= 100);
 
-console.log(sum, i);
+console.log(sum, i); // сумма четных чисел, последнее число i=102
+
 
 //task 3
 for (sum = 0, i = 2; i <= 100; i += 2) {
     sum += i;
 }
 
-console.log(sum, i);
+console.log(sum, i); // сумма четных чисел, последнее число  i=102
+
 
 //task 4
 let n = 1_000_000, count = 0;
@@ -37,7 +39,7 @@ while (n != 1) {
     }
     count++;
 }
-console.log(count);
+console.log(count); // гипотеза Серокуз
 
 
 //task 5

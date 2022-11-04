@@ -24,5 +24,5 @@ var day = 7,
  } else if ((day > 0 && day < 6 ) && (hour > 16)) { 
      console.log("Доставка завтра c 8.00 до 16.00");
  } else if ((day >= 6) && (hour > 16)) {
-    console.log ("Доставка в послезавтра");
+    console.log ("Доставка будет послезавтра");
  }
