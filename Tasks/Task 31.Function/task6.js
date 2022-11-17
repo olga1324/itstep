@@ -28,4 +28,3 @@ let filtred = Arr.filter(function (element, index, array){
 });
 console.log (filtred); 
 
-

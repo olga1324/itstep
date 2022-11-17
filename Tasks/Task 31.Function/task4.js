@@ -43,3 +43,47 @@ for (let i = 0; i < array.length; i++) {
 }
 console.log(maxIndex);
 
+//or
+
+function getMaxElementIndexInArray(array) {
+
+    let maxIndex = 0;
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > array[maxIndex]) {
+            maxIndex = i;
+        }
+    }
+
+    return maxIndex;
+}
+
+//варианты вызова функции
+//вариант 1
+console.log("1:");
+console.log(getMaxElementInArray([1, 2, 3]));
+
+//вариант 2
+console.log("2:");
+let z = getMaxElementInArray([1, 2, 3]);
+console.log(z);
+
+//вариант 3
+console.log("3:");
+let moymassive = [1, 2, 3];
+z = getMaxElementInArray(moymassive);
+console.log(z);
+
+//вариант 4
+console.log("4:");
+console.log(moymassive);
+fillRandomArray(moymassive, moymassive.length);
+console.log(moymassive);
+z = getMaxElementInArray(moymassive);
+console.log(z);
+
+//вариант 5
+console.log("5:");
+console.log(a); // массив a описан выше строка 28
+z = getMaxElementInArray(a);
+console.log(z);

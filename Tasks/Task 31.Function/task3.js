@@ -22,4 +22,19 @@ function maxElement(array){
 let max = Math.max.apply(null, arr);
 console.log(max)*/
 
+// or
+
+function getMaxElementInArray(massive) { // функция - это решение задачи в общем в виде без привязки к конкретному массиву
+
+    let maxElement = massive[0];
+
+    for (let i = 1; i < massive.length; i++) {
+        if (massive[i] > maxElement) {
+            maxElement = massive[i];
+        }
+    }
+
+    return maxElement;
+}
+
 

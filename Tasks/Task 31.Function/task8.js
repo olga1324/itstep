@@ -16,3 +16,22 @@ function contains(arr, elem) {
 }
 
 console.log(elem[i]);
+
+//or
+
+function searchIndexInArray(a, x) {
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] == x) {
+            return i; // нашли элемент
+        }
+    }
+
+    return -1; // не нашли элемент
+}
+
+if (r) {
+    console.log("Нашли");
+} else {
+    console.log("Не нашли");
+}
