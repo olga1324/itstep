@@ -70,6 +70,10 @@ n = m.slice(-2);
 
 console.log(n);
 
+//or
+b = a.slice(3);
+console.log(b);
+
 /*9. Дан массив [1, 2, 3, 4, 5]. С помощью метода 
 splice преобразуйте массив в [1, 4, 5].*/
 console.log("Task 9");
@@ -118,6 +122,23 @@ m.sort();
 
 console.log(m);
 
+//or
+a = [3, 14, 1, 2, 7];
+a.sort(function(a,b){
+    if(a == b){
+        return 0;
+    }
+    if(a > b){
+        return 1;
+    }
+    return -1;
+});
+console.log(a);
+a = [3, 14, 1, 2, 7];
+a.sort((a,b) => a-b);
+console.log(a);
+
+
 /*14.forEach: Дан массив с числами. Создайте новый 
 массив, состоящий из квадратов этих чисел.*/
 console.log("Task 14");
@@ -130,6 +151,24 @@ m.forEach(function(item, i, array){
 })
 
 console.log(m);
+
+//or
+a = [3, 14, 1, 2, 7];
+b = [];
+a.forEach(function(item, i){ //item == a[i]
+    b.push(item**2);
+})
+console.log(b);
+
+//or
+
+function square(x){
+    b.push(x*x);
+}
+a = [3, 14, 1, 2, 7];
+b = [];
+a.forEach(square);
+console.log(b);
 
 //15. Дан массив с числами. Найдите сумму этих чисел
 console.log("Task 15");
@@ -188,6 +227,14 @@ function lessZero(num) {
 
 console.log(m.some(lessZero));
 
+//or
+a = [3, -14, 1, 2, 7];
+
+result = a.some(function(item){
+    return item < 0;
+});
+console.log(result);
+
 /*19. Дан массив с числами. Найдите сумму этих чисел.
 reduce, reduceRight:*/
 console.log("Task 19");
@@ -199,8 +246,22 @@ m = [3, 4, 6, 9, 11, 8];
 
 sum = m.reduce(function(summa, item){
     return summa + item;
-});
+}, 0);//0- начальное значение суммы
 
+console.log(sum);
+
+//or
+a = [3, -14, 1, 2, 7];
+
+sum = a.reduce(function(sum, item, i){
+    console.log("Итерация", i,"Элемент",item, "Сумма", sum );
+    return sum + item;
+}, 0); // sum = 0; sum равно значению второго параметра
+console.log(sum);
+sum = a.reduce(function(sum, item, i){
+    console.log("Итерация", i,"Элемент",item, "Сумма", sum );
+    return sum + item;
+});
 console.log(sum);
 
 /*20. Дан массив с числами. Найдите сумму первых N
@@ -222,6 +283,22 @@ let sumN = m.reduce(function(summa, item){
 
 console.log(sum);
 
+//or
+a = [3, 14, 0, 1, 2, 7];
+
+isNull = false;
+sum = a.reduce(function(sum, item){
+    if(item == 0)
+        isNull = true;
+
+    if(!isNull)
+        return sum + item;
+    
+    return sum;
+}, 0);
+console.log(sum);
+
+
 /*21. Дан массив с числами. Найдите сумму последних 
 N элементов до первого нуля с конца. Пример: 
 [1, 2, 3, 0, 4, 5, 6] - суммируем последние 3 элемента,
@@ -242,6 +319,19 @@ sumN = m.reduceRight(function (summa, item) {
 
 console.log(sum);
 
+//or
+a = [3, 14, 0, 1, 2, 7];
+
+result = 0;
+a.reduceRight(function(sum, item){
+    if(item == 0){
+        result = sum;
+        return sum;
+    }
+    return sum + item;
+}, 0);
+console.log(result);
+
 /*22. Дан массив с числами. Узнайте сколько элементов
 с начала массива надо сложить, чтобы в сумме
  получилось больше 10-ти. */
@@ -257,7 +347,24 @@ number = m.reduce(function(summa, item){
         element++;
         return summa + item;
     }
-});
+}, 0);
+
+//or
+a = [3, 14, 0, 1, 2, 7];
+
+let count = 0;
+
+a.reduce(function(sum, item){
+    if(sum > 10){
+        return sum;
+    }
+
+    count++;
+    return sum + item;
+}, 0);
+
+console.log(count);
+
 
 /*23. Дан массив с числами. Узнайте сколько элементов 
 с конца массива надо сложить, чтобы в сумме 
@@ -275,7 +382,23 @@ number = m.reduceRight(function (summa, item) {
         element++;
         return summa + item;
     }
-});
+}, 0);
+
+//or
+a = [3, 14, 0, 1, 2, 7];
+
+count = 0;
+
+a.reduceRight(function(sum, item){
+    if(sum > 10){
+        return sum;
+    }
+
+    count++;
+    return sum + item;
+}, 0);
+
+console.log(count);
 
 /*Комбинирование:24. Дан массив с числами. Оставьте
  в нем только положительные числа. Затем извлеките 
@@ -296,3 +419,57 @@ arr.forEach(function(item, i, array){
 });
 
 console.log(arr);
+
+//or
+a = [9, -14, 0, 1, 4, 49];
+
+b = a.filter(function(item){
+    return item > 0;
+});
+
+b = b.map(function(item){
+    return item ** 0.5;
+});
+
+console.log(b);
+
+//or
+
+b = a.filter(function(item){
+    return item > 0;
+}).map(function(item){
+    return item ** 0.5;
+});
+
+console.log(b);
+
+//or
+sum = a.filter((item) => item > 0).reduce((sum, item) => sum + item);
+
+
+//  в данном случае функции x и y  эквиваленты
+let x = (item) => item > 0;
+
+function y(item){
+    return item > 0;
+}
+
+function compare(a , b){
+    if(a == b){
+        return 0;
+    }
+    if(a > b){
+        return 1;
+    }
+    return -1;    
+}
+
+const compareArrow = (a , b) => {
+    if(a == b){
+        return 0;
+    }
+    if(a > b){
+        return 1;
+    }
+    return -1;    
+}
