@@ -45,3 +45,14 @@ if (sumEven > sumNotEven) {
     console.log("Суммы четных  и нечетных элементов  равны");
     return;
 }
+
+//or
+
+console.log("Task 2:");
+a = [2, -1, 0, 1, -2, 4];
+
+let b = a.filter((item) => item % 2 == 0).reduce((sum, item) => sum + item, 0);
+let c = a.filter((item) => item % 2 == 1).reduce((sum, item) => sum + item, 0);
+
+let max = Math.max(b, c);
+console.log(max);

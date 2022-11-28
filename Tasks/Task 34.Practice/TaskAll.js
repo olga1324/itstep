@@ -3,7 +3,7 @@
 умножить на - 1.*/
 console.log("Task 1");
 
-let a = [3, -4, 10, -21, 8, -9, 5, 17];
+let a = [3, -4, 0, -21, 8, -9, 5, 17];
 let b = [];
 
 
@@ -28,7 +28,6 @@ console.log("Task 2");
 a = [3, -4, 10, -21, 8, -9, 5, 17];
 let even = [];
 let notEven = [];
-
 
 even = a.filter(function (item) {
     return item % 2 == 0;
@@ -77,7 +76,7 @@ a = [3, 4, 10, 21, 8, 9, 5, 17];
 evenIndex = [];
 notEvenIndex = [];
 
-a.forEach ((item, index) => {
+a.forEach ((item, index) => { //для нахождения индекса нужны два параметра item , index
     if (index % 2 === 0) {
         evenIndex.push (item)
     } else {

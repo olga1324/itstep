@@ -43,3 +43,14 @@ if (sumEvenIndex > sumNotEvenIndex) {
     console.log("Суммы элементов с четными и нечетными индексами равны");
     return;
 }
+
+//or
+
+console.log("Task 3:");
+a = [2, -1, 0, 1, -2, 4];
+
+b = a.filter((item, index) => index % 2 == 0).reduce((sum, item) => sum + item, 0);
+c = a.filter((item, index) => index % 2 == 1).reduce((sum, item) => sum + item, 0);
+
+max = Math.max(b, c);
+console.log(max);

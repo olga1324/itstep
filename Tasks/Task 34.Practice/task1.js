@@ -18,3 +18,13 @@ b = b.map(function (item) {
 });
 
 console.log(b);
+
+//or
+
+console.log("Task 1:");
+ a = [2, -1, 0, 1, -2, 4];
+
+a = a.filter((item) => item >= 0);
+a = a.map((item) => -item);
+
+console.log(a);

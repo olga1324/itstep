@@ -11,3 +11,12 @@ a = a.filter(function (item) {
 });
 
 console.log(a);
+
+//or
+
+console.log("Task 6:");
+a = [2, -1, 0, 1, -2, 4];
+let x = 0;
+a = a.filter((item) => item <= x);
+
+console.log(a);
