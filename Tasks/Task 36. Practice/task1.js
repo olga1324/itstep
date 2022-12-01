@@ -7,4 +7,14 @@ function wordCount(str) {
 
 console.log(wordCount("Посчитать количество слов в строке"));
 
+//or
+
+console.log("Task 1");
+
+let str = "Мама мыла раму";
+
+let count = str.split(" ").length;
+console.log(count);
+
+
 
