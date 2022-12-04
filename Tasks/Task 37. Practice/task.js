@@ -4,10 +4,11 @@ console.log("Task 1");
 
 /* fill- заполняет все элементы массива от начального до конечного индексов одним значением*/
 
-let length = 3;
-let arr = Array(length).fill (14);
+let n = 10, value = 1;
 
-console.log(arr);
+let x = (new Array(n)).fill(value);
+
+console.log(x);
 
 //2. Найти сумму только положительных элементов массива.
 console.log("Task 2");
@@ -65,7 +66,7 @@ console.log("Task 5");
 a = [1,3,6,4,3,3,5,6];
 let deleted = [1, 3];
 
-arr = a.filter(function(item) {
+let arr = a.filter(function(item) {
     return deleted.indexOf(item) == -1; 
     // совпадение индекса искомого элемента будет совпадать с индексом поиска только для первого вхождения
 });
@@ -107,6 +108,16 @@ if (arr1 == arr2){
     console.log("предложение не является панграммой");
 }
 
+//or
+
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+sentence = "Brick quiz whangs jumpy veldt fox!";
+
+isTrue = sentence.toLowerCase().split("").filter((letter) => alphabet.includes(letter)).filter((item, index, array) => array.indexOf(item) == index).sort().join("") == alphabet; // sentence.toLowerCase().split("").filter((letter) => alphabet.includes(letter)).filter((item, index, array) => array.indexOf(item) == index).sort().join("") - это строка, которую мы сравниваем с другой строкой
+
+console.log(isTrue);
+
 /*8. Дано натурально число. Получить число, которое образуется из записи цифр данного
 в обратном порядке.*/
 console.log("Task 8");
@@ -119,17 +130,198 @@ console.log(b);
 элементы меньшие числа A, а потом большие.*/
 console.log("Task 9");
 
-a = [1, 3, 6, 4, 11, 16, 5, 2];
-let x = 4;
+b = [7, 2, 4, 5, 1];
+let A = 3;
 
-arr1 = a.filter((item) => item <= x).sort((a, b) => a - b);
-arr2 = a.filter((item) => item > x).sort((a, b) => a - b);
+a = b.filter((item) => item < A);
+c = b.filter((item) => item > A);
 
-console.log(arr1, arr2);
+a = a.concat(c);
 
-let arr3 = arr1.concat(arr2);
-
-console.log(arr3);
+console.log(a);
 
 /*10. Дано 3 массива. Найти элементы, которые встречаются в каких-либо 2 массивах, 
 но их нету в 3 массиве.*/
+console.log("Task 10");
+
+a = [1, 2, 3, 4];
+b = [1, 2, 4, 5, 7];
+let c = [2, 5, 7];
+let result = [];
+
+a.forEach(function (item) {
+    if (b.includes(item) && !c.includes(item))
+        result.push(item);
+    if (!b.includes(item) && c.includes(item))
+        result.push(item);
+});
+
+b.forEach(function (item) {
+    if (c.includes(item) && !a.includes(item))
+        result.push(item)
+});
+
+console.log(result);
+
+//11. Дана строка.Подсчитать количество слогов в слове. 
+console.log("Task 11");
+
+let vowels = "уеыаоэяиюё";
+let word = "электросоковыжималка";
+let count = word.split("").filter((item) => vowels.includes(item)).length;
+
+console.log(count);
+
+/*12. Дана слово.Получить строку из данного слова, где 
+нечетные буквы будут заглавными, а четные - строчными.*/
+console.log("Task 12");
+word = "электросоковыжималка";
+
+str = word.split("").map((item, index) => (index % 2 == 0) ? item.toLowerCase() : item.toUpperCase()).join("");
+
+console.log(str);
+
+str = word.split("").map(function(item, index){
+    if(index % 2 == 0){
+        return item.toLowerCase();
+    } else {
+        return item.toUpperCase();
+    }
+}).join("");
+
+console.log(str);
+
+/*13. Дано полный путь к файлу(например, 
+"D:\ITStep\itstep2\Tasks\Task 37. Practice\task.txt").
+Вывести все названия папок, которые входят в заданный путь. */
+console.log("Task 13");
+
+let path = "D:\\ITStep\\itstep2\\Tasks\\Task 37. Practice\\task.txt";
+
+path.split("\\").forEach(function (item, index, array) {
+    if (index != 0 && index != (array.length - 1)) {
+        console.log(item);
+    }
+});
+
+/*14. Дана строка.Поделить строку на фрагменты по 3 символа в 
+каждой.*/
+console.log("Task 14");
+
+word = "электросоковыжималка";
+a = word.split("");
+result = [];
+a.forEach(function (item, index) {
+    if (index % 3 == 0) {
+        result.push(word.substring(index, index + 3));
+    }
+});
+
+console.log(result);
+
+result = [];
+
+for (let index = 0; index < word.length; index += 3) { //index+= 3 - c шагом равным 3
+    result.push(word.substring(index, index + 3)); //substring вырезает от первого параметра до второго, то есть длина равна второй параметр минус первый
+}
+
+console.log(result);
+/*15. Дано слово.Проверить, является ли данное слово 
+палиндромом.*/
+console.log("Task 15");
+
+word = "топот";
+
+let inverseWord = word.split("").reverse().join("");
+if (word.toLowerCase() == inverseWord.toLowerCase()) {
+    console.log("Палиндром");
+} else {
+    console.log("Не палиндром");
+}
+
+//16. Дано предложение.Найти самое длинное слово в предложении.
+console.log("Task 16");
+
+str = "Аргентина манит негра";
+
+let longWord = str.split(" ").reduce(function (word, item) {// word - самое длинное слово
+    if (item.length > word.length) {
+        return item;
+    }
+    return word;
+}, "");
+
+console.log(longWord);
+
+/*17. Дан массив из слов.Проверить условие, что первая буква
+ каждого слова равна последней букве предыдущего слова.*/
+console.log("Task 17");
+
+let words = ["Москва", "Архангельск", "Киев", "Витебск", "Киров"];
+
+let isTrue = words.every(function (word, index, array) { //array == words, word == array[index]    
+    if (index > 0) {
+        if (word[0].toLowerCase() == array[index - 1].slice(-1).toLowerCase()) { //array[index - 1] - предыдущее слово, slice(-1) - последняя буква
+            return true;
+        }
+        return false;
+    }
+    return true;
+});
+
+console.log(isTrue);
+
+/*18. Дан массив чисел и число N.Вывести из данного массива 
+N самых больших по значению чисел.*/
+console.log("Task 18");
+
+b = [7, 2, 4, 5, 1];
+let N = 4;
+
+a = b.sort((a, b) => a - b).splice(-4);
+
+console.log(a);
+
+/*19. Дано 2 предложения.Посчитать количество слов, которые
+ есть в обоих предложениях.*/
+console.log("Task 19");
+
+let sentence1 = "Мама мыла раму";
+let sentence2 = "Папа мыла раму";
+let array1Words = sentence1.split(" ");
+let array2Words = sentence2.split(" ");
+
+count = array1Words.filter((item) => array2Words.includes(item)).length;
+
+console.log(count);
+
+/*20. Дана строка, состоящее из слов между которыми может 
+быть больше одного пробела.Удалить все лишние пробелы,
+ т.е.оставить по 1 пробелу между словами.*/
+console.log("Task 20");
+
+let sentence = "Мама    мыла    раму";
+
+sentence = sentence.split("").filter(function (letter, i, array) {
+    if (letter == " " && array[i + 1] == " ")
+        return false; // не включаем текущий символ, если он равен пробелу и следующий символ тоже пробел
+    return true;
+}).join("");
+
+console.log(sentence);
+
+/*дано два массива и число К.Найти число по одному 
+из каждого массива, сумма которыч равна К*/
+console.log("Task 21");
+
+a = [7, 2, 4, 5, 1];
+
+b = [7, 2, 4, 5, 1];
+
+K = 9;
+
+a.forEach(function (item) {
+    if (b.includes(K - item)) {
+        console.log(item, K - item);
+    }
+});
