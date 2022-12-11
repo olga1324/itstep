@@ -2,14 +2,14 @@
  от 1 до N.*/
 console.log("Task 1");
 
-a = [2, 4, 8, 5];
+let arr = [2, 4, 8, 5];
 let N = 8;
 
 for (let i = 1; i <= N; i++){
-    a.push(i);
+    arr.push(i);
 }
 
-let numSquares = a.map (function (item){
+let numSquares = arr.map (function (item){
     return item ** 2;
 });
 
@@ -20,7 +20,7 @@ console.log(numSquares);
 числа - значение числа без знака).*/
 console.log("Task 2");
 
-a = [1, -2, -3, 4, 5, -6, 8, 9, -10,  -4];
+let a = [1, -2, -3, 4, 5, -6, 8, 9, -10,  -4];
 let b = [];
 let c = [];
 
@@ -112,7 +112,7 @@ a = [1, 10, -33, 4, 12, -6, 8, 6, 17];
 явл результатом выполнения map c послед вызовом flat  и 
 подъемом на уроdень 1*/
 
-b = a.flatMap((x, i, a) => x < a[i + 1] ? a[i + 1] : []);
+b = a.flatMap((item, i, arr) => item < arr[i + 1] ? arr[i + 1] : []);
 
 console.log(b);
 
@@ -156,7 +156,7 @@ console.log(b);
 порядковый номер дня относительно начала года.*/
 console.log("Task 9");
 
-str = '24.5.2022';
+let str = '24.5.2022';
 
 str = str.split(".").reverse().join("-");
 
@@ -170,7 +170,7 @@ let diff = myDate - firstJan;
 return (diff / (1000 * 60 * 60 *24) + 1);
 }
 
-result = dayOfYear(str);
+let result = dayOfYear(str);
 
 console.log(result);
 
@@ -200,7 +200,7 @@ console.log("Task 10");
 
 let array = [345, 346, 4574357, 12312, 5345, 7474];
 
-let result = array.reduce((maxNumber, item) => {
+ result = array.reduce((maxNumber, item) => {
 
     let summDigitsOfMaxNumber = maxNumber.toString().split("").reduce((sum, element) => sum + (+ element), 0);
     let summDigitsOfItem = item.toString().split("").reduce((sum, element) => sum + (+ element), 0);
@@ -263,7 +263,6 @@ str = "Вывести слова в предложение в порядке у�
 
 console.log(arr);
 
-
 /*14. Дано предложение.Вывести частоту встречаемости
  каждого символа в строке.*/
 console.log("Task 14");
@@ -281,7 +280,7 @@ function count (str) {
 console.log(count(str));
 
 //or
-let str = "Аргентина манит негра";
+str = "Аргентина манит негра";
 
 let unique = str.toLowerCase().split("").filter((item, index) => str.toLowerCase().indexOf(item) == index);
 let uniqueCount = [];
@@ -370,7 +369,7 @@ console.log(a);
 
 console.log("Task 18");
 
-let a = [1, 2, 3, 4, 5, 6, 7];
+a = [1, 2, 3, 4, 5, 6, 7];
 
 a = a.map(function (item, index) {
     if (index % 2 == 1) {
@@ -400,7 +399,7 @@ console.log("Task 20");
 arr = [1, 5, 2, 4, 7, 6, 10];
 
 let min = Math.min.apply(Math, arr.filter(function(n){
-    return n % 2 == 0
+    return n % 2 == 0;
 }))
 
 console.log(min);

@@ -80,8 +80,9 @@ user = {
 };
 cloneUser = {};
 
+// ручное создание клона
 for(let key in user){
-    if(typeof user[key] != "object")
+    if(typeof user[key] != "object") 
         cloneUser[key] = user[key];
     else {
         cloneUser[key] = {};
@@ -127,5 +128,5 @@ doubleNumber(menu);
 console.log(menu);
 
 
-
+delete user.name;
 
