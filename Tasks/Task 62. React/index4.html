@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Example</title>
+</head>
+
+<body>
+    <h1>вапрвалопло</h1>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        //начало компонента
+        function ClickButton(props) {
+
+            function press(event) {
+                alert("Hello React!" + getRandomNumber(1,10)+ `${event.target.tagName}`);
+            }
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            return <button onClick={press}>Click</button>;
+        }
+        //конец компонента
+
+
+        // создание приложения
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <ClickButton />
+            );
+    </script>
+</body>
+
+</html>

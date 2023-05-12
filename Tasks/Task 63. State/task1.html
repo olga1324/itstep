@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Example</title>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        function MathResult() {
+            function increase(event){
+                let num1= document.querySelectorById("number1");
+                let num2= document.querySelectorById("number2");
+
+
+                let p = document.querySelector("p");
+                let value = +p.innerText;
+                value++;
+                p.innerText = value; 
+            }
+
+
+            function handleNameChange(event) {
+                setName(event.target.value);
+            }
+
+            function handleAgeChange(event) {
+                setAge(event.target.value);
+            }
+
+            
+           
+            return (
+                <div>
+                        <p><input type="text" name="number" id="number1" value="0"/></p>
+                        <p><input type="text" name="number" id="number2" value="0"/></p>
+                        <p>{result}</p>
+                        <div>
+                    <button onClick={increase}>
+                        результат
+                    </button>
+                </div>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(
+            document.getElementById("app")
+        )
+            .render(
+                <MathResult/>
+            );
+    </script>
+</body>
+
+</html>
+
+
+
+
+let button = document.querySelector(".btn_click");
+   if(button){
+    button.addEventListener("click", function(){
+        let input1 = document.querySelector("#number1");
+        let input2 = document.querySelector("#number2");
+        let a = +input1.value;
+        let b = +input2.value;
+
+        let div = document.querySelector("div");
+        if(div.children.length == 0){
+            let sum = a + b;
+            let dif = a - b;
+            let mult = a * b;
+            let div = a / b;
+            if( b === 0){
+                result = "Деление на 0"
+            }
+            div.innerText = `сумма: ${sum}, разность: ${dif},произведение: ${mult},частное: ${div}`
+        }
+    })
+   }

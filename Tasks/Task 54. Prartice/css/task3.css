@@ -1,0 +1,59 @@
+.contaiter{
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.chess-box{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px; 
+}
+
+.button{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+tbody{
+    border: 2px solid#000;
+}
+
+.checker {
+   position: absolute;
+    background: #b6077f;
+    border-radius: 50%;
+    margin: -33px 0 0px 25px;
+    width: 80px;
+    height: 80px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+    transition-duration: 2s;
+}
+
+.chess {
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+}
+
+.black {
+    width: 50px;
+    height: 50px;
+    background: #000;
+}
+
+.white {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+td{
+    position: relative;
+}
