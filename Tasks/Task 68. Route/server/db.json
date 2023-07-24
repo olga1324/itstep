@@ -1,0 +1,29 @@
+{
+    "user": {
+        "name": "Вася Пупкин",
+        "age": 30
+    },
+    "products": [
+        {
+            "id": 1,
+            "name": "Молоко",
+            "price": 5,
+            "quantity": 1,
+            "favorite": false
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "productId": 1,
+            "author": "Вася пупкин",
+            "text": "Работает на ура"
+        },
+        {
+            "id": 2,
+            "productId": 1,
+            "author": "Вася пупкин",
+            "text": "Не усваивается"
+        }
+    ]
+}

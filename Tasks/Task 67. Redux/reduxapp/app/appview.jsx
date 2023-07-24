@@ -2,25 +2,24 @@ const React = require("react");
 const connect = require("react-redux").connect;
 const actions = require("./actions.jsx");
   
-class PhoneForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.phoneInput = React.createRef();
-  }
-  onClick() {
-    if (this.phoneInput.current.value !== "") {
+function PhoneForm(props){
+  let phoneInput = React.createRef();
+  
+  function handleButtonClick() {
+    if (phoneInput.current.value !== "") {
  
-      const itemText = this.phoneInput.current.value;
-      this.phoneInput.current.value ="";
-      return this.props.addPhone(itemText);
+      const itemText = phoneInput.current.value;
+      phoneInput.current.value ="";
+      return props.onAddPhone(itemText);
     }
   }
-  render() {
+
+
     return <div>
             <input ref={this.phoneInput} />
-            <button onClick = {this.onClick.bind(this)}>Добавить</button>
+            <button onClick={handleButtonClick}>Добавить</button>
         </div>
-  }
+
 };
   
 class PhoneItem extends React.Component {
@@ -53,14 +52,12 @@ class PhonesList extends React.Component {
   }
 };
   
-class AppView extends React.Component {
-  
-    render() {
+function AppView(props) {
         return <div>
-            <PhoneForm addPhone={this.props.addPhone}/>
-            <PhonesList {...this.props} />
-    </div>
-  }
+            <PhoneForm onAddPhone={props.addPhone}/>
+            <PhonesList {...props} />
+        </div>
+
 };
   
 function mapStateToProps(state) {

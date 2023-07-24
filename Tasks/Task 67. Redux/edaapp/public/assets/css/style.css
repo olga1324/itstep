@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#app{
+    width: 800px;
+}
+.blog_posts{
+    margin-top: 50px;
+}
+.btn {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #ca396c;
+ transform: scale(1.1);
+}
+
+.button_trash {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+}
+.button_trash,
+.button_favorite,
+.button_unfavorite {
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+}
+img{
+    width: 100px;
+}
+.red{
+    color: #f00;
+}
